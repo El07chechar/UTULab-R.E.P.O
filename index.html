@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wiki R.E.P.O</title>
-    <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/styles.css" />
   </head>
   <body>
     <header>
-      <div class="portada"><img src="#" alt="Logo"></div>
+      <div class="portada"><img src="#" alt="Logo" /></div>
       <h1>Wiki R.E.P.O</h1>
       <h2>Bienvenidos a la wiki de R.E.P.O</h2>
     </header>
@@ -17,30 +17,144 @@
         <h2>Navegacion</h2>
         <ul>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="jugador.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="jugador.html"
+                ><button>Entrar</button></a
+              >
+            </div>
           </li>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="monstruos.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="#1-Enemigos"
+                ><button>Entrar</button></a
+              >
+            </div>
           </li>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="mapas.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="#2-Mapas"
+                ><button>Entrar</button></a
+              >
+            </div>
           </li>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="objetosTienda.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="#3-Tienda"
+                ><button>Entrar</button></a
+              >
+            </div>
           </li>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="objetosVenta.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="4-Venta"><button>Entrar</button></a>
+            </div>
           </li>
           <li>
-            <div class="categoria"><img src="" alt=""><a href="tutorial.html"><button>Entrar</button></a></div>
+            <div class="categoria">
+              <img src="" alt="" /><a href="tutorial.html"
+                ><button>Entrar</button></a
+              >
+            </div>
           </li>
         </ul>
       </div>
-      <div class="carrusel-1"></div>
-      <div class="carrusel-2"></div>
-      <div class="carrusel-3"></div>
-      <div class="carrusel-4"></div>
+      <div class="carrusel" id="1-Enemigos">
+        <button class="previo" onclick="moverSlide(-1, '1-Enemigos')">❮</button>
+        <div class="slides">
+          <div class="slide2"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide3"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide1"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide4"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide5"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide6"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide7"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide8"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide9"><div class="monstruos"><img src="#" alt=""></div></div>
+          <div class="slide10"><div class="monstruos"><img src="#" alt=""></div>
+          <button class="siguiente" onclick="moverSlide(1, '1-Enemigos')">
+            ❯
+          </button>
+        </div>
+      </div>
+      <div class="carrusel" id="2-Mapas">
+        <button class="previo" onclick="moverSlide(-1, '2-Mapas')">❮</button>
+        <div class="slides">
+          <div class="slide1"></div>
+          <div class="slide2"></div>
+          <div class="slide3"></div>
+          <div class="slide4"></div>
+          <div class="slide5"></div>
+          <div class="slide6"></div>
+          <div class="slide7"></div>
+          <div class="slide8"></div>
+          <div class="slide9"></div>
+          <div class="slide10"></div>
+          <button class="siguiente" onclick="moverSlide(1, '2-2-Mapas')">
+            ❯
+          </button>
+        </div>
+      </div>
+      <div class="carrusel" id="3-Tienda">
+        <button class="previo" onclick="moverSlide(-1, '3-Tienda')">❮</button>
+        <div class="slides">
+          <div class="slide1"></div>
+          <div class="slide2"></div>
+          <div class="slide3"></div>
+          <div class="slide4"></div>
+          <div class="slide5"></div>
+          <div class="slide6"></div>
+          <div class="slide7"></div>
+          <div class="slide8"></div>
+          <div class="slide9"></div>
+          <div class="slide10"></div>
+          <button class="siguiente" onclick="moverSlide(1, '3-Tienda')">
+            ❯
+          </button>
+        </div>
+      </div>
+      <div class="carrusel" id="4-Venta">
+        <button class="previo" onclick="moverSlide(-1, '4-Venta')">❮</button>
+        <div class="slides">
+          <div class="slide1"></div>
+          <div class="slide2"></div>
+          <div class="slide3"></div>
+          <div class="slide4"></div>
+          <div class="slide5"></div>
+          <div class="slide6"></div>
+          <div class="slide7"></div>
+          <div class="slide8"></div>
+          <div class="slide9"></div>
+          <div class="slide10"></div>
+          <button class="siguiente" onclick="moverSlide(1, '4-Venta')">
+            ❯
+          </button>
+        </div>
+      </div>
     </main>
     <footer></footer>
+    <script>
+      let indiceActual = {};
+
+      function moverSlide(direccion, carruselId) {
+        const carrusel = document.getElementById(carruselId);
+        const slides = carrusel.querySelectorAll(".slides");
+        const totalSlides = slides.children.length;
+
+        if (!indiceActual[carruselId]) {
+          indiceActual[carruselId] = 0;
+        }
+
+        indiceActual[carruselId] += direccion;
+
+        if (indiceActual[carruselId] < 0) {
+          indiceActual[carruselId] = totalSlides - 1;
+        } else if (indiceActual[carruselId] >= totalSlides) {
+          indiceActual[carruselId] = 0;
+        }
+
+        const offset = -indiceActual[carruselId] * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+      }
+    </script>
   </body>
 </html>
