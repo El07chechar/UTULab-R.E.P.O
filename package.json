@@ -1,0 +1,28 @@
+{
+  "name": "utulab-r.e.p.o",
+  "version": "1.0.0",
+  "description": "Proyecto para Utulab y Programacion Full Stack sobre una wiki de R.E.P.O al rededor de la fecha 22/04/25",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El07chechar/UTULab-R.E.P.O.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/El07chechar/UTULab-R.E.P.O/issues"
+  },
+  "homepage": "https://github.com/El07chechar/UTULab-R.E.P.O#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3"
+  }
+}

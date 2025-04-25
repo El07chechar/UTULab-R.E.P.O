@@ -1,20 +1,55 @@
-body{
-    display: grid;
-    grid-template-rows:repeat(3, 1fr);
+body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-header{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
-.portada{
-    background-image: url(../img/portada.jpg);
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+.portada {
+  background-image: url(../img/portada.jpg);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
-main{
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
+main {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.menu-principal {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.menu-principal nav ul {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.categoria {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.carrusel {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.subtitulo-carrusel {
+  grid-column: span 3;
+}
+
+.slides {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+footer {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
 }
