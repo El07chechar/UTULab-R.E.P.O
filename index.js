@@ -20,3 +20,20 @@ function moverSlide(direccion, carruselId) {
     const offset = -indiceActual[carruselId] * 100;
     slides.style.transform = `translateX(${offset}%)`;
 }
+
+// Seleciona todos los elementos de categoria
+const categorias = document.querySelectorAll('.categoria');
+
+categorias.forEach(categoria => {
+  const texto = categoria.querySelector('.hover-texto');
+
+  categoria.addEventListener('mouseenter', () => {
+    texto.style.opacity = 1;
+    categoria.querySelector('img').style.transform = 'scale(1.1)';
+  });
+
+  categoria.addEventListener('mouseleave', () => {
+    texto.style.opacity = 0;
+    categoria.querySelector('img').style.transform = 'scale(1)';
+  });
+});
