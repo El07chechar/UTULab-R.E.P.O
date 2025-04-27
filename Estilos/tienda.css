@@ -91,17 +91,3 @@ header {
     color: white;
     font-weight: bold;
 }
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .grid-container, .grid-container-6 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header img.logo {
-        margin-bottom: 10px;
-    }
-}
