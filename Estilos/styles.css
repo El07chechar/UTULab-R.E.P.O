@@ -124,6 +124,8 @@ nav {
   grid-column: span 3;
 }
 
+.previo, .siguiente{ margin: 0;}
+
 .slides {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
