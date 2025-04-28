@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html {width: 100%;}
+
+* {box-sizing: border-box;}
 
 body {
   width: 100%;
@@ -13,10 +11,10 @@ body {
 }
 
 header {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(3, auto);
   text-align: center;
-  width: 100%;
 }
 
 .logo {
