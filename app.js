@@ -1,25 +1,47 @@
-const carruseles = document.querySelectorAll('.carrusel'); // Seleccionar todos los carruseles
+function iniciarCarrusel(idCarrusel) {
+  const carrusel = document.getElementById(idCarrusel);
+  const contenedor = carrusel.querySelector('.contenedor');
+  const botonIzquierda = carrusel.querySelector('.movimiento--izquierda');
+  const botonDerecha = carrusel.querySelector('.movimiento--derecha');
+  const slides = carrusel.querySelectorAll('.contenedor__slide');
 
-carruseles.forEach(carrusel => {
-  const contenedorSlides = carrusel.querySelector('.slides'); // Contenedor de slides del carrusel actual
-  const btnPrev = carrusel.querySelector('.movimiento-slides-atras'); // Botón "atrás" del carrusel actual
-  const btnNext = carrusel.querySelector('.movimiento-slides-adelante'); // Botón "adelante" del carrusel actual
+  let index = 0;
 
-  let indexActual = 0;
+  function slidesAMostrar() {
+    return window.innerWidth < 768 ? 2 : 4;
+  }
 
-  // Evento para mover con los botones
-  btnPrev.addEventListener('click', () => {
-    const slideWidth = contenedorSlides.querySelector('.slide').offsetWidth;
-    indexActual = Math.max(indexActual - 1, 0);
-    contenedorSlides.style.transform = `translateX(-${indexActual * slideWidth}px)`;
+  function moverCarrusel() {
+    const desplazamiento = (100 / slidesAMostrar()) * index;
+    contenedor.style.transform = `translateX(-${desplazamiento}%)`;
+    actualizarBotones();
+  }
+
+  function actualizarBotones(){
+    botonIzquierda.disabled = index === 0;
+    botonDerecha.disabled = index >= slides.length - slidesAMostrar();
+  }
+
+  botonDerecha.addEventListener('click', () => {
+    if (index < slides.length - slidesAMostrar()) {
+      index++;
+      moverCarrusel();
+    }
   });
 
-  btnNext.addEventListener('click', () => {
-    const slideWidth = contenedorSlides.querySelector('.slide').offsetWidth;
-    const visibleSlides = Math.floor(contenedorSlides.offsetWidth / slideWidth);
-    const totalSlides = contenedorSlides.children.length;
-    const maxIndex = Math.ceil(totalSlides - visibleSlides+1);
-    indexActual = Math.min(indexActual + 1, maxIndex);
-    contenedorSlides.style.transform = `translateX(-${indexActual * slideWidth}px)`;
+  botonIzquierda.addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+      moverCarrusel();
+    }
   });
-})
+
+  window.addEventListener('resize', moverCarrusel)
+
+  actualizarBotones();
+}
+
+iniciarCarrusel('carrusel1');
+iniciarCarrusel('carrusel2');
+iniciarCarrusel('carrusel3');
+iniciarCarrusel('carrusel4');
