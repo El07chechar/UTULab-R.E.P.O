@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-html {width: 100%;}
 
-* {box-sizing: border-box;}
-=======
 * {
   box-sizing: border-box;
 }
->>>>>>> b852dfa84baee7ec017b7da23ea529020a42f36a
 
 body {
   width: 100vw;
@@ -14,18 +9,11 @@ body {
 }
 
 header {
-<<<<<<< HEAD
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  text-align: center;
-=======
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
->>>>>>> b852dfa84baee7ec017b7da23ea529020a42f36a
 }
 
 img.logo {
