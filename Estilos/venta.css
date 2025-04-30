@@ -13,7 +13,6 @@ html {height: 100%;}
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -43,9 +42,40 @@ header {
 
 main {display: grid; gap: 16px;}
 
-h2 {font-size: 26px; color: #312b3a; margin: 1rem 0;}
+h2 {font-size: 26px; margin-top: 25px; margin-bottom: 5px; margin: 25px 90px 5px 90px;}
 
+p{margin: auto 100px 2px 100px;}
 
+ul {margin: auto 130px 2px 130px;}
+
+a{color: var(--color-medium); text-decoration: underline;}
+
+.texto, table{
+    width: 1400px;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--color-bg-div);
+}
+
+tr{text-align: center;}
+
+table tr td img, .item, .precio, .tamaño, .daño, .trampas, .fragil, .mapa, .detalle {
+    padding: 5px;
+    font-weight: normal;
+}
+
+table tr td img{width: 350px; border-radius: 8px;}
+
+.item {width: 140px;}
+
+.precio {width: 160px;}
+
+.fragil {max-width: 50px;}
+
+.mapa {width: 120px;}
+
+.detalle {width: 300px;}
 
 @media (max-width: 1096px) {
     

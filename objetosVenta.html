@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/venta.css"/>
     <title>Objetos de Venta</title>
 </head>
 <body>
@@ -12,7 +13,95 @@
     <main>
         <section class="product container">
 
-            <h2>Objetos vendibles</h2>
+            <div class="texto">
+                <h2>Objetos vendibles</h2>
+                <br>
+                <p>Los objetos vendibles son cualquier objeto que se pueda vender en un punto de extracción. Algunos son exclusivos de una ubicación y solo aparecen en esa ubicación específica, mientras que otros son generales y aparecen en todas las ubicaciones.</p>
+                <br>
+                <p>Los objetos vendibles tienen 7 categorías de tamaño, siendo:</p>
+                <ul>
+                    <li>Diminuto</li>
+                    <li>Pequeño</li>
+                    <li>Medio</li>
+                    <li>Grande</li>
+                    <li>Ancho</li>
+                    <li>Alto</li>
+                    <li>Muy alto</li>
+                </ul>
+                <br>
+                <p>Los objetos vendibles también tienen 11 categorías de "Tamaño de combate" que determinan el daño de un objeto cuando golpea a un monstruo, siendo:</p>
+                <ul>
+                    <li>0/2/5/8</li>
+                    <li>0/3/6/10</li>
+                    <li>0/4/8/12</li>
+                    <li>0/5/10/15</li>
+                    <li>0/10/20/30</li>
+                    <li>0/15/30/45</li>
+                    <li>0/17/35/52</li>
+                    <li>0/20/40/60</li>
+                    <li>0/25/50/75</li>
+                    <li>0/30/60/90</li>
+                    <li>0/40/80/120</li>
+                </ul>
+                <br>
+                <p>Cualquier objeto vendible en el juego aturdirá a los enemigos "pequeños", pero solo aquellos objetos vendibles que tengan un daño máximo de 30 o más aturdirán a los "enemigos grandes".</p>
+                <br>
+                <p>Los objetos vendibles pueden aturdir sin causar daño alguno.</p>
+                <br>
+                <p>Pequeños enemigos:</p>
+                <ul>
+                    <li><a href="/enemigos/Niño de la sombra.html">Niño de la sombra</a></li>
+                    <li><a href="/enemigos/Gnomo.html">Gnomo</a></li>
+                    <li><a href="/enemigos/Escupidor.html">Escupidor</a></li>
+                    <li><a href="/enemigos/Rugrat.html">Rugrat</a></li>
+                    <li><a href="/enemigos/Animal.html">Animal</a></li>
+                    <li><a href="/enemigos/Upscream.html">Upscream</a></li>
+                    <li><a href="/enemigos/Chef.html">Chef</a></li>
+                    <li><a href="/enemigos/Oculto.html">Oculto</a></li>
+                    <li><a href="/enemigos/Petardo.html">Petardo</a></li>
+                </ul>
+                <br>
+                <p>Grandes enemigos:</p>
+                <ul>
+                    <li><a href="/enemigos/Bowtie.html">Bowtie</a></li>
+                    <li><a href="/enemigos/Mentalista.html">Mentalista</a></li>
+                    <li><a href="/enemigos/Jefe.html">Jefe</a></li>
+                    <li><a href="/enemigos/Túnica.html">Túnica</a></li>
+                    <li><a href="/enemigos/Cazador.html">Cazador</a></li>
+                    <li><a href="/enemigos/Segador.html">Segador</a></li>
+                    <li><a href="/enemigos/Payaso.html">Payaso</a></li>
+                    <li><a href="/enemigos/Trudge.html">Trudge</a></li>
+                </ul>
+                <br>
+                <p>No puede ser aturdido ni dañado:</p>
+                <ul>
+                    <li><a href="/enemigos/Depredador maximo.html">Depredador máximo</a></li>
+                    <li><a href="/enemigos/Mirón.html">Mirón</a></li>
+                </ul>
+                <br>
+                <p>Si el Dron indestructible está conectado al objeto, no puede aturdir ni golpear a los monstruos , sin embargo aturdirá a los jugadores sin causarles daño.</p>
+                <br>
+                <p>A pesar del nombre " Dron Indestructible ", los objetos no perderán su valor como se esperaba, pero sí tendrán interacciones especiales intactas (ruidos de caja de animales, explosiones de barriles, rotura de caja de escoba, etc.)</p>
+                <br>
+                <p>También existen 11 categorías de valor, siendo:</p>
+                <ul>
+                    <li>Muy barato (menos de $300)</li>
+                    <li>Barato- ($300-$450)</li>
+                    <li>Barato ($500-$650)</li>
+                    <li>Barato+ ($850-$1100)</li>
+                    <li>Barato++ ($1200-$2000)</li>
+                    <li>Mediano ($2000-$3000)</li>
+                    <li>Mediano+ ($3500-$4500)</li>
+                    <li>Alto ($5500-$7500)</li>
+                    <li>Alto+ ($9500-$12000)</li>
+                    <li>Caro ($18000-$25000)</li>
+                    <li>Caro+ ($30000-$45000)</li>
+                </ul>
+                <br>
+                <p>Algunos objetos valiosos están clasificados como trampas , lo que significa que tienen la posibilidad de dañar al jugador o atraer enemigos.</p>
+                <br>
+                <p>Las interacciones de las trampas que se detallarán a continuación se activan aleatoriamente al interactuar el jugador con un objeto. Un fallo en la pantalla indica que la trampa se ha activado.</p>
+            </div>
 
             <table>
 
@@ -28,246 +117,786 @@
                     <th>Detalle</th>
                 </tr>
                 <tr>
-                    <th>Diamante</th>
-                    <th><img src="venta/img/Diamond.webp" alt="Imágen diamante"></th>
-                    <th>Medio</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>Sí</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Anillo de esmeralda</td>
+                    <td><img src="venta/img/Emerald_Ring.webp" alt="Imágen anillo de esmeralda"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Anillo de esmeralda</th>
-                    <th><img src="venta/img/Emerald_Ring.webp" alt="Imágen anillo de esmeralda"></th>
-                    <th>Barato</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Copa</td>
+                    <td><img src="venta/img/Goblet.webp" alt="Imágen copa"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Copa</th>
-                    <th><img src="venta/img/Goblet.webp" alt="Imágen copa"></th>
-                    <th>Barato</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Ocarina</td>
+                    <td><img src="venta/img/Ocarina.webp" alt="Imágen ocarina"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Ocarina</th>
-                    <th><img src="venta/img/Ocarina.webp" alt="Imágen ocarina"></th>
-                    <th>Barato</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Reloj de bolsillo</td>
+                    <td><img src="venta/img/PocketWatchWiki.webp" alt="Imágen reloj de bolsillo"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Reloj de bolsillo</th>
-                    <th><img src="venta/img/PocketWatchWiki.webp" alt="Imágen reloj de bolsillo"></th>
-                    <th>Barato</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Taza de uranio</td>
+                    <td><img src="venta/img/Uranium_Mug.webp" alt="Imágen taza de uranio"></td>
+                    <td class="precio">Barato++</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Taza de uranio</th>
-                    <th><img src="venta/img/Uranium_Mug.webp" alt="Imágen taza de uranio"></th>
-                    <th>Barato++</th>
-                    <th>Diminuto</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>Sí</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Diamante</td>
+                    <td><img src="venta/img/Diamond.webp" alt="Imágen diamante"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Diminuto</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Pequeño excedente valioso</th>
-                    <th><img src="venta/img/Small_Surplus.webp" alt="Imágen pequeño excedente valioso"></th>
-                    <th>Muy barato - Medio+</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th>Se otorga cuando se proporciona dinero extra ($1-$5000) a un punto de extracción.</th>
+                    <td class="item">Pequeño excedente valioso</td>
+                    <td><img src="venta/img/Small_Surplus.webp" alt="Imágen pequeño excedente valioso"></td>
+                    <td class="precio">Muy barato - Medio+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se otorga cuando se proporciona dinero extra ($1-$5000) a un punto de extracción.</td>
                 </tr>
                 <tr>
-                    <th>Corona</th>
-                    <th><img src="venta/img/Crown.webp" alt="Imágen corona"></th>
-                    <th>Barato</th>
-                    <th>Pequeño</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Corona</td>
+                    <td><img src="venta/img/Crown.webp" alt="Imágen corona"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Muñeca</th>
-                    <th><img src="venta/img/Doll.webp" alt="Imágen muñeca"></th>
-                    <th>Barato</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Muñeca</td>
+                    <td><img src="venta/img/Doll.webp" alt="Imágen muñeca"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Dinero</th>
-                    <th><img src="venta/img/Money.webp" alt="Imágen dinero"></th>
-                    <th>Barato</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Dinero</td>
+                    <td><img src="venta/img/Money.webp" alt="Imágen dinero"></td>
+                    <td class="precio">Barato</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Rana</th>
-                    <th><img src="venta/img/Frog.webp" alt="Imágen rana"></th>
-                    <th>Barato+</th>
-                    <th>Pequeño</th>
-                    <th>0/2/5/8</th>
-                    <th>Salta inmediatamente si lo sueltas a menos que lo hayas colocado en el carrito o punto de extracción.</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th>Al impactar, puede comenzar a saltar durante 10 segundos, causándose daños a sí mismo y a otros objetos.</th>
+                    <td class="item">Rana</td>
+                    <td><img src="venta/img/Frog.webp" alt="Imágen rana"></td>
+                    <td class="precio">Barato+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">Salta inmediatamente si lo sueltas a menos que lo hayas colocado en el carrito o punto de extracción.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Al impactar, puede comenzar a saltar durante 10 segundos, causándose daños a sí mismo y a otros objetos.</td>
                 </tr>
                 <tr>
-                    <th>Caja de gemas</th>
-                    <th><img src="venta/img/Gem_Box.webp" alt="Imágen caja de gemas"></th>
-                    <th>Barato+</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Caja de gemas</td>
+                    <td><img src="venta/img/Gem_Box.webp" alt="Imágen caja de gemas"></td>
+                    <td class="precio">Barato+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Mono de juguete</th>
-                    <th><img src="venta/img/Monkey.webp" alt="Imágen mono de juguete"></th>
-                    <th>Barato+</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>El mono comienza a golpear los platillos mientras se mueve ligeramente.</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Mono de juguete</td>
+                    <td><img src="venta/img/Monkey.webp" alt="Imágen mono de juguete"></td>
+                    <td class="precio">Barato+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">El mono comienza a golpear los platillos mientras se mueve ligeramente.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Árbol bonsái</th>
-                    <th><img src="venta/img/Bonsai.webp" alt="Imágen árbol bonsái"></th>
-                    <th>Barato+</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Exclusivo de la estación McJannek.</th>
-                    <th></th>
+                    <td class="item">Árbol bonsái</td>
+                    <td><img src="venta/img/Bonsai.webp" alt="Imágen árbol bonsái"></td>
+                    <td class="precio">Barato+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Pequeño enemigo valioso</th>
-                    <th><img src="venta/img/SmallEnemyValuableWiki.webp" alt="Imágen pequeño enemigo valioso"></th>
-                    <th>Barato+ - medio</th>
-                    <th>Pequeño</th>
-                    <th>0/3/6/10</th>
-                    <th>No es una trampa</th>
-                    <th>Sí</th>
-                    <th>Todos</th>
-                    <th>Se suelta al matar a un enemigo. No recibe daño durante 5 segundos después de que un enemigo lo suelte.</th>
+                    <td class="item">Pequeño enemigo valioso</td>
+                    <td><img src="venta/img/SmallEnemyValuableWiki.webp" alt="Imágen pequeño enemigo valioso"></td>
+                    <td class="precio">Barato+ - medio</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/3/6/10</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se suelta al matar a un enemigo. No recibe daño durante 5 segundos después de que un enemigo lo suelte.</td>
                 </tr>
                 <tr>
-                    <th>Jarrón pequeño</th>
-                    <th><img src="venta/img/SmallVaseWIki.webp" alt="Imágen jarrón pequeño"></th>
-                    <th>Barato++</th>
-                    <th>Pequeño</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>Sí</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Jarrón pequeño</td>
+                    <td><img src="venta/img/SmallVaseWIki.webp" alt="Imágen jarrón pequeño"></td>
+                    <td class="precio">Barato++</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Globo</th>
-                    <th><img src="venta/img/Globe.webp" alt="Imágen globo"></th>
-                    <th>Barato++</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Globo</td>
+                    <td><img src="venta/img/Globe.webp" alt="Imágen globo"></td>
+                    <td class="precio">Barato++</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Disco duro</th>
-                    <th><img src="venta/img/HDD.webp" alt="Imágen disco duro"></th>
-                    <th>Medio</th>
-                    <th>Pequeño</th>
-                    <th>0/10/20/30</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Exclusivo de la estación McJannek.</th>
-                    <th></th>
+                    <td class="item">Disco duro</td>
+                    <td><img src="venta/img/HDD.webp" alt="Imágen disco duro"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Libro de masticar</th>
-                    <th><img src="venta/img/Chomp_Book.webp" alt="Imágen libro de masticar"></th>
-                    <th>Medio</th>
-                    <th>Pequeño</th>
-                    <th>0/2/5/8</th>
-                    <th>Libro rompe la cerradura, vuela y empieza a atacarte con mordiscos. Está activo durante aproximadamente 9 segundos. Inflige 20 de daño a los enemigos y 5 de daño a los jugadores por mordisco.</th>
-                    <th>No</th>
-                    <th>Exclusivo de Swiftbroom Academy.</th>
-                    <th>Un libro dañino no hace nada.</th>
+                    <td class="item">Libro de masticar</td>
+                    <td><img src="venta/img/Chomp_Book.webp" alt="Imágen libro de masticar"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">Libro rompe la cerradura, vuela y empieza a atacarte con mordiscos. Está activo durante aproximadamente 9 segundos. Inflige 20 de daño a los enemigos y 5 de daño a los jugadores por mordisco.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">Un libro dañino no hace nada.</td>
                 </tr>
                 <tr>
-                    <th>Poción de amor</th>
-                    <th><img src="venta/img/Love_Potion.webp" alt="Imágen poción de amor"></th>
-                    <th>Medio</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Exclusivo de Swiftbroom Academy.</th>
-                    <th>Al recogerlo, el jugador dirá cosas agradables sobre el jugador más cercano o dirá algo agradable sobre la poción si no hay nadie cerca.</th>
+                    <td class="item">Poción de amor</td>
+                    <td><img src="venta/img/Love_Potion.webp" alt="Imágen poción de amor"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">Al recogerlo, el jugador dirá cosas agradables sobre el jugador más cercano o dirá algo agradable sobre la poción si no hay nadie cerca.</td>
                 </tr>
                 <tr>
-                    <th>Placa de uranio</th>
-                    <th><img src="venta/img/Uranium_Plate.webp" alt="Imágen placa de uranio"></th>
-                    <th>Medio</th>
-                    <th>Pequeño</th>
-                    <th>0/2/5/8</th>
-                    <th>No es una trampa</th>
-                    <th>Sí</th>
-                    <th>Todos</th>
-                    <th></th>
+                    <td class="item">Placa de uranio</td>
+                    <td><img src="venta/img/Uranium_Plate.webp" alt="Imágen placa de uranio"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/2/5/8</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
                 </tr>
                 <tr>
-                    <th>Caja de música</th>
-                    <th><img src="venta/img/Music_Box.webp" alt="Imágen caja de música"></th>
-                    <th>Medio+</th>
-                    <th>Pequeño</th>
-                    <th>0/5/10/15</th>
-                    <th>No es una trampa</th>
-                    <th>No</th>
-                    <th>Exclusivo de Headman Manor.</th>
-                    <th>Al recogerlo, hará que el jugador gire como una bailarina, lo que hará que sea un poco difícil colocarlo en el carrito sin golpearlo contra nada.</th>
+                    <td class="item">Caja de música</td>
+                    <td><img src="venta/img/Music_Box.webp" alt="Imágen caja de música"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Pequeño</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Al recogerlo, hará que el jugador gire como una bailarina, lo que hará que sea un poco difícil colocarlo en el carrito sin golpearlo contra nada.</td>
+                </tr>
+                <tr>
+                    <td class="item">Computadora portátil</td>
+                    <td><img src="venta/img/Laptop.webp" alt="Imágen computadora portátil"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Paquete de muestra de seis</td>
+                    <td><img src="venta/img/Sample_6-Pack.webp" alt="Imágen paquete de muestra de seis"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Muestra</td>
+                    <td><img src="venta/img/Sample.webp" alt="Imágen muestra"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Botella</td>
+                    <td><img src="venta/img/Bottle.webp" alt="Imágen botella"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">Lo mismo que cuando choca con algo.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Al chocar con algo, el corcho puede salirse de la botella y salpicar por todas partes. Después de un tiempo, volverá a la normalidad.</td>
+                </tr>
+                <tr>
+                    <td class="item">Payaso</td>
+                    <td><img src="venta/img/Clown.webp" alt="Imágen payaso"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Si lo agarran por la nariz, graznará y se reirá. Si lo agarran tres veces por la nariz, se convertirá en un explosivo temporizado. Tras cada graznido, el payaso emite un sonido único que ayuda a determinar cuándo explotará. Esto puede ser útil en el modo multijugador. ¿Tiene 250/300 de daño?</td>
+                </tr>
+                <tr>
+                    <td class="item">Computadora</td>
+                    <td><img src="venta/img/Computer.webp" alt="Imágen computadora"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Admirador</td>
+                    <td><img src="venta/img/Fan.webp" alt="Imágen admirador"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">Al sostenerlo, producirá una corriente de aire que volará todo lo que se encuentre frente a él.</td>
+                </tr>
+                <tr>
+                    <td class="item">Gramófono</td>
+                    <td><img src="venta/img/GramophoneWIki.webp" alt="Imágen gramófono"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Se enciende y reproduce música que atrae a los enemigos.</td>
+                </tr>
+                <tr>
+                    <td class="item">Radio</td>
+                    <td><img src="venta/img/Radio.webp" alt="Imágen radio"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Se enciende y emite un sonido que atrae a los enemigos.</td>
+                </tr>
+                <tr>
+                    <td class="item">Trofeo</td>
+                    <td><img src="venta/img/Trophy.webp" alt="Imágen trofeo"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Jarrón mediano</td>
+                    <td><img src="venta/img/Medium_Vase.webp" alt="Imágen jarrón mediano"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Cabeza de duende</td>
+                    <td><img src="venta/img/Goblin.webp" alt="Imágen cabeza de duende"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Cristal de poder</td>
+                    <td><img src="venta/img/Power_Crystal.webp" alt="Imágen cristal de poder"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">Al romperse, explota. La explosión siempre inflige 50 de daño tanto a enemigos como a jugadores.</td>
+                </tr>
+                <tr>
+                    <td class="item">Tanque de propano</td>
+                    <td><img src="venta/img/Propane_Tank.webp" alt="Imágen tanque de propano"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">Si se daña, emite llamas durante aproximadamente 14 segundos (puede ser aleatorio). Inflige 2 de daño a monstruos (hasta 30 DPS) y 1 de daño a jugadores (hasta 19 DPS) por cada ciclo de daño. Al romperse, crea una explosión que inflige 100 de daño a monstruos y 50 de daño a jugadores.</td>
+                </tr>
+                <tr>
+                    <td class="item">Barco en una botella</td>
+                    <td><img src="venta/img/Ship_in_a_Bottle.webp" alt="Imágen barco en una botella"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Enemigo mediano valioso</td>
+                    <td><img src="venta/img/MediumEnemyValuableWiki.webp" alt="Imágen enemigo mediano valioso"></td>
+                    <td class="precio">Medio+ - Alto</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/4/8/12</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se suelta al matar a un enemigo. No recibe daño durante 5 segundos después de que un enemigo lo suelte.</td>
+                </tr>
+                <tr>
+                    <td class="item">Impresora 3D</td>
+                    <td><img src="venta/img/3D_Printer.webp" alt="Imágen impresora 3D"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Reloj de arena</td>
+                    <td><img src="venta/img/Hourglass.webp" alt="Imágen reloj de arena"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">Cuando un jugador agarra el reloj de arena, éste reducirá drásticamente su velocidad y bajará la velocidad y el tono de su voz.</td>
+                </tr>
+                <tr>
+                    <td class="item">Excedente medio valioso</td>
+                    <td><img src="venta/img/Medium_Surplus.webp" alt="Imágen excedente medio valioso"></td>
+                    <td class="precio">Alto - Alto+</td>
+                    <td class="tamaño">Medio</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se otorga cuando se proporciona dinero extra ($5001-$10000) a un punto de extracción.</td>
+                </tr>
+                <tr>
+                    <td class="item">Gran muestra</td>
+                    <td><img src="venta/img/Big_Sample.webp" alt="Imágen gran muestra"></td>
+                    <td class="precio">Medio</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Lanzallamas</td>
+                    <td><img src="venta/img/Flamethrower.webp" alt="Imágen Lanzallamas"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">
+                        Al impactar, libera un chorro de llamas. Al sujetarlo por el mango rojo, la llama se enciende continuamente hasta extinguirse. Inflige 15 de daño a monstruos (hasta 48 DPS) y 10 de daño a jugadores (hasta 40 DPS) por cada ciclo de daño. Tiene 10 segundos de combustible.
+                        CONSEJO: Se puede usar para convertir un CARRITO en una torreta móvil. Si un jugador coloca un objeto de valor Grande o Mediano en el carro para evitar que el Lanzallamas caiga completamente dentro, la boquilla quedará fuera. Esto es especialmente efectivo contra la Túnica, ya que el carro la mantendrá alejada, mientras que el daño del Lanzallamas evitará que la Túnica ataque el carro.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">Guitarra</td>
+                    <td><img src="venta/img/Guitar.webp" alt="Imágen guitarra"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">Si tocas las cuerdas emitirán un sonido.</td>
+                </tr>
+                <tr>
+                    <td class="item">Enfriador de muestras</td>
+                    <td><img src="venta/img/Sample_Cooler.webp" alt="Imágen enfriador de muestras"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Exhibición de diamantes</td>
+                    <td><img src="venta/img/Diamond_Display.webp" alt="Imágen exhibición de diamantes"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Sierra de hielo</td>
+                    <td><img src="venta/img/Ice_Saw.webp" alt="Imágen sierra de hielo"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">Se enciende durante un tiempo determinado sin posibilidad de apagarlo.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">Al interactuar, se activa y causa daño a todo lo que toca la hoja de sierra. Inflige 5 de daño a los enemigos (hasta 17 DPS) y 1 de daño a los jugadores (hasta 8,2 DPS).</td>
+                </tr>
+                <tr>
+                    <td class="item">Poción maestra</td>
+                    <td><img src="venta/img/Master_Potion.webp" alt="Imágen poción maestra"></td>
+                    <td class="precio">Medio+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">CONSEJO: Aunque se asemeja a un objeto de vidrio típico, resulta bastante resistente, lo que permite su uso como arma contundente. Como cabe fácilmente en un carrito, pero es bastante voluminoso, conviene transportarlo en un carrito y depositarlo rápidamente en un punto de extracción, dejando espacio libre en el carrito para objetos más pequeños y compactos.</td>
+                </tr>
+                <tr>
+                    <td class="item">Gran enemigo valioso</td>
+                    <td><img src="venta/img/BigEnemyValuableWiki.webp" alt="Imágen gran enemigo valioso"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/5/10/15</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se suelta al matar a un enemigo. No recibe daño durante 5 segundos después de que un enemigo lo suelte.</td>
+                </tr>
+                <tr>
+                    <td class="item">Muñeca que grita</td>
+                    <td><img src="venta/img/ScreamDollWiki.webp" alt="Imágen muñeca que grita"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/10/20/30</td>
+                    <td class="trampas">No es una trampa. El juego no lo clasifica como una trampa, pero aun así, tenga cuidado al recogerlo.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Al sostenerlo, grita, ataca agitando los brazos e intenta acercarse al jugador (esto se puede minimizar moviendo constantemente el muñeco para alejarlo de ti). Inflige 1 de daño por golpe a los monstruos y 2 de daño por golpe a los jugadores.Necesita más pruebas, el código llama a la colisión al calcular el daño, por lo que puede ser inconsistente.</td>
+                </tr>
+                <tr>
+                    <td class="item">Televisión</td>
+                    <td><img src="venta/img/Television.webp" alt="Imágen televisión"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">Se enciende y comienza a reproducir un canal aleatorio y hace ruido, lo que atrae a los enemigos.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Jarrón grande</td>
+                    <td><img src="venta/img/Big_Vase.webp" alt="Imágen jarrón grande"></td>
+                    <td class="precio">Alto</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Cubo del conocimiento</td>
+                    <td><img src="venta/img/Cube_of_Knowledge.webp" alt="Imágen cubo del conocimiento"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/30/60/90</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">CONSEJO: Dado que tiene un alto valor, un gran peso y cabe perfectamente en un CARRITO, es aconsejable transportarlo al punto de atracción más cercano utilizando un carrito para evitar el riesgo de daños y luego dejarlo para liberar espacio en el carrito para artículos más pequeños.</td>
+                </tr>
+                <tr>
+                    <td class="item">Barril</td>
+                    <td><img src="venta/img/Barrel.webp" alt="Imágen barril"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa. El juego no lo clasifica como una trampa, pero aun así, tenga cuidado al recogerlo.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle">Si el barril recibe tres impactos, causará varias explosiones rapidísimas, cada una infligiendo 100 de daño tanto a monstruos como a jugadores (el daño siempre es el mismo, aunque debe calcularse según el tamaño y la velocidad de la explosión). Puede explotar incluso bajo el efecto de un dron indestructible, pero el barril no se destruirá. Esto lo convierte en un arma excelente, pero ten en cuenta que, debido a un error, al desactivar el dron después de que el barril haya explotado, este volverá a explotar y lo destruirá.</td>
+                </tr>
+                <tr>
+                    <td class="item">Pierna de criatura</td>
+                    <td><img src="venta/img/Creature_Leg.webp" alt="Imágen pierna de criatura"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/25/50/75</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Gran excedente valioso</td>
+                    <td><img src="venta/img/Large_Surplus.webp" alt="Imágen gran excedente valioso"></td>
+                    <td class="precio">Alto+ - Caro+</td>
+                    <td class="tamaño">Grande</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">Se otorga cuando se proporciona dinero extra ($10001+) a un punto de extracción.</td>
+                </tr>
+                <tr>
+                    <td class="item">Bloque de hielo</td>
+                    <td><img src="venta/img/Ice_Block.webp" alt="Imágen bloque de hielo"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Ancho</td>
+                    <td class="daño">0/25/50/75</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Dinosaurio</td>
+                    <td><img src="venta/img/Dinosaur.webp" alt="Imágen dinosaurio"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Ancho</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">Sí</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Caja para animales</td>
+                    <td><img src="venta/img/Animal_Crate.webp" alt="Imágen caja para animales"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Ancho</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Todos</td>
+                    <td class="detalle">
+                        Si no está en posición vertical (flecha hacia arriba) o está dañado, empezará a hacer ruidos, recibirá daño y generará/atraerá monstruos. Explotará al romperse, infligiendo 300 de daño a los monstruos y 50 de daño a los jugadores.
+                        CONSEJO: Dañarlo puede forzar la aparición de monstruos. Colocarlo de lado o voltearlo obligará a los monstruos a permanecer cerca hasta su destrucción, lo que permite el control de masas y/o una fácil caza de monstruos. También se puede usar al principio de las rondas finales para determinar qué monstruos están activos.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">Piano</td>
+                    <td><img src="venta/img/Piano.webp" alt="Imágen piano"></td>
+                    <td class="precio">Caro+</td>
+                    <td class="tamaño">Ancho</td>
+                    <td class="daño">0/40/80/120</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Reproduce notas al interactuar con las teclas.</td>
+                </tr>
+                <tr>
+                    <td class="item">Estatua del grifo</td>
+                    <td><img src="venta/img/Griffin_Statue.webp" alt="Imágen estatua del grifo"></td>
+                    <td class="precio">Caro+</td>
+                    <td class="tamaño">Ancho</td>
+                    <td class="daño">0/40/80/120</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Espada</td>
+                    <td><img src="venta/img/Sword_Valuable.webp" alt="Imágen espada"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Alto</td>
+                    <td class="daño">0/15/30/45</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">No debe confundirse con el objeto comprable espada, ya que este no se puede colocar en el inventario y no está destinado a usarse como arma.</td>
+                </tr>
+                <tr>
+                    <td class="item">Estación Científica</td>
+                    <td><img src="venta/img/Science_Station.webp" alt="Imágen estación Científica"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Alto</td>
+                    <td class="daño">0/25/50/75</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Arpa</td>
+                    <td><img src="venta/img/Harp.webp" alt="Imágen arpa"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Alto</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa. No se puede encontrar en el código. Se desconoce si está clasificado como trampa o no. Si lo encuentra, pegue el nombre de la clase.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle">Al interactuar con las cuerdas, cada una emite su propio sonido.</td>
+                </tr>
+                <tr>
+                    <td class="item">Cuadro</td>
+                    <td><img src="venta/img/Painting.webp" alt="Imágen cuadro"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Alto</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">El bastón de Dumgolf</td>
+                    <td><img src="venta/img/Dumgolf_Staff.webp" alt="Imágen el bastón de Dumgolf"></td>
+                    <td class="precio">Caro+</td>
+                    <td class="tamaño">Alto</td>
+                    <td class="daño">0/17/35/52</td>
+                    <td class="trampas">No es una trampa. El juego no lo clasifica como una trampa, pero el láser puede arruinar la carrera si no se apunta correctamente.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">
+                        Si se daña, el cristal del extremo emite un láser, similar al del Payaso, que daña todo lo que toca. Inflige 10 de daño a los enemigos (hasta 37 DPS) y 35 de daño a los jugadores (hasta 57,5 DPS) por cada ciclo de daño.
+                        CONSEJO: Este objeto puede ser bastante peligroso si se manipula incorrectamente. Para evitar riesgos para los jugadores y los objetos, asegúrate de manipularlo desde el centro para que se mantenga estable.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">Escoba</td>
+                    <td><img src="venta/img/Broom.webp" alt="Imágen escoba"></td>
+                    <td class="precio">Alto+</td>
+                    <td class="tamaño">Muy alto</td>
+                    <td class="daño">0/17/35/52</td>
+                    <td class="trampas">No es una trampa. El juego no lo clasifica como una trampa, pero aun así, tenga cuidado al recogerlo.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Swiftbroom Academy.</td>
+                    <td class="detalle">
+                        Si la caja se rompe, la escoba volará hacia arriba y hacia adelante, dañándose. La caja podría romperse incluso bajo la acción de un dron indestructible.
+                        CONSEJO: La caja se puede destruir sin dañar el objeto. La escoba dejará de volar al colocarla en una zona de extracción.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">Estatua dorada</td>
+                    <td><img src="venta/img/Golden_Statue.webp" alt="Imágen estatua dorada"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Muy alto</td>
+                    <td class="daño">0/20/40/60</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Rack de servidores</td>
+                    <td><img src="venta/img/Server_Rack.webp" alt="Imágen rack de servidores"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Muy alto</td>
+                    <td class="daño">0/25/50/75</td>
+                    <td class="trampas">No es una trampa</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de la estación McJannek.</td>
+                    <td class="detalle"></td>
+                </tr>
+                <tr>
+                    <td class="item">Reloj de pie</td>
+                    <td><img src="venta/img/Grandfather_Clock.webp" alt="Imágen reloj de pie"></td>
+                    <td class="precio">Caro</td>
+                    <td class="tamaño">Muy alto</td>
+                    <td class="daño">0/25/50/75</td>
+                    <td class="trampas">La campana empieza a sonar fuerte.</td>
+                    <td class="fragil">No</td>
+                    <td class="mapa">Exclusivo de Headman Manor.</td>
+                    <td class="detalle"></td>
                 </tr>
 
             </table>
