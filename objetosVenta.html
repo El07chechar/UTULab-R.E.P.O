@@ -3,110 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/venta.css"/>
     <title>Objetos de Venta</title>
+    
+    <link rel="stylesheet" href="Estilos/venta.css"/>
+    <link rel="shortcut icon" href="venta/img/Punto de extracción.webp" type="image/xicon">
+
 </head>
 <body>
     <header>
         <a href="index.html"><img src="img/logo.webp" alt="Logo" class="logo"></a>
     </header>
     <main>
-        <section class="product container">
-
-            <div class="texto">
-                <h2>Objetos vendibles</h2>
-                <br>
-                <p>Los objetos vendibles son cualquier objeto que se pueda vender en un punto de extracción. Algunos son exclusivos de una ubicación y solo aparecen en esa ubicación específica, mientras que otros son generales y aparecen en todas las ubicaciones.</p>
-                <br>
-                <p>Los objetos vendibles tienen 7 categorías de tamaño, siendo:</p>
-                <ul>
-                    <li>Diminuto</li>
-                    <li>Pequeño</li>
-                    <li>Medio</li>
-                    <li>Grande</li>
-                    <li>Ancho</li>
-                    <li>Alto</li>
-                    <li>Muy alto</li>
-                </ul>
-                <br>
-                <p>Los objetos vendibles también tienen 11 categorías de "Tamaño de combate" que determinan el daño de un objeto cuando golpea a un monstruo, siendo:</p>
-                <ul>
-                    <li>0/2/5/8</li>
-                    <li>0/3/6/10</li>
-                    <li>0/4/8/12</li>
-                    <li>0/5/10/15</li>
-                    <li>0/10/20/30</li>
-                    <li>0/15/30/45</li>
-                    <li>0/17/35/52</li>
-                    <li>0/20/40/60</li>
-                    <li>0/25/50/75</li>
-                    <li>0/30/60/90</li>
-                    <li>0/40/80/120</li>
-                </ul>
-                <br>
-                <p>Cualquier objeto vendible en el juego aturdirá a los enemigos "pequeños", pero solo aquellos objetos vendibles que tengan un daño máximo de 30 o más aturdirán a los "enemigos grandes".</p>
-                <br>
-                <p>Los objetos vendibles pueden aturdir sin causar daño alguno.</p>
-                <br>
-                <p>Pequeños enemigos:</p>
-                <ul>
-                    <li><a href="/enemigos/Niño de la sombra.html">Niño de la sombra</a></li>
-                    <li><a href="/enemigos/Gnomo.html">Gnomo</a></li>
-                    <li><a href="/enemigos/Escupidor.html">Escupidor</a></li>
-                    <li><a href="/enemigos/Rugrat.html">Rugrat</a></li>
-                    <li><a href="/enemigos/Animal.html">Animal</a></li>
-                    <li><a href="/enemigos/Upscream.html">Upscream</a></li>
-                    <li><a href="/enemigos/Chef.html">Chef</a></li>
-                    <li><a href="/enemigos/Oculto.html">Oculto</a></li>
-                    <li><a href="/enemigos/Petardo.html">Petardo</a></li>
-                </ul>
-                <br>
-                <p>Grandes enemigos:</p>
-                <ul>
-                    <li><a href="/enemigos/Bowtie.html">Bowtie</a></li>
-                    <li><a href="/enemigos/Mentalista.html">Mentalista</a></li>
-                    <li><a href="/enemigos/Jefe.html">Jefe</a></li>
-                    <li><a href="/enemigos/Túnica.html">Túnica</a></li>
-                    <li><a href="/enemigos/Cazador.html">Cazador</a></li>
-                    <li><a href="/enemigos/Segador.html">Segador</a></li>
-                    <li><a href="/enemigos/Payaso.html">Payaso</a></li>
-                    <li><a href="/enemigos/Trudge.html">Trudge</a></li>
-                </ul>
-                <br>
-                <p>No puede ser aturdido ni dañado:</p>
-                <ul>
-                    <li><a href="/enemigos/Depredador maximo.html">Depredador máximo</a></li>
-                    <li><a href="/enemigos/Mirón.html">Mirón</a></li>
-                </ul>
-                <br>
-                <p>Si el Dron indestructible está conectado al objeto, no puede aturdir ni golpear a los monstruos , sin embargo aturdirá a los jugadores sin causarles daño.</p>
-                <br>
-                <p>A pesar del nombre " Dron Indestructible ", los objetos no perderán su valor como se esperaba, pero sí tendrán interacciones especiales intactas (ruidos de caja de animales, explosiones de barriles, rotura de caja de escoba, etc.)</p>
-                <br>
-                <p>También existen 11 categorías de valor, siendo:</p>
-                <ul>
-                    <li>Muy barato (menos de $300)</li>
-                    <li>Barato- ($300-$450)</li>
-                    <li>Barato ($500-$650)</li>
-                    <li>Barato+ ($850-$1100)</li>
-                    <li>Barato++ ($1200-$2000)</li>
-                    <li>Mediano ($2000-$3000)</li>
-                    <li>Mediano+ ($3500-$4500)</li>
-                    <li>Alto ($5500-$7500)</li>
-                    <li>Alto+ ($9500-$12000)</li>
-                    <li>Caro ($18000-$25000)</li>
-                    <li>Caro+ ($30000-$45000)</li>
-                </ul>
-                <br>
-                <p>Algunos objetos valiosos están clasificados como trampas , lo que significa que tienen la posibilidad de dañar al jugador o atraer enemigos.</p>
-                <br>
-                <p>Las interacciones de las trampas que se detallarán a continuación se activan aleatoriamente al interactuar el jugador con un objeto. Un fallo en la pantalla indica que la trampa se ha activado.</p>
-            </div>
+        <div class="detalles">
+            <img class="portada" src="venta/img/Punto de extracción.webp" alt="Imágen de un punto de extracción">
+            <h1>Objetos vendibles</h1>
+            <br>
+            <p>Los objetos vendibles son cualquier objeto que se pueda vender en un punto de extracción. Algunos son exclusivos de una ubicación y solo aparecen en esa ubicación específica, mientras que otros son generales y aparecen en todas las ubicaciones.</p>
+            <br>
+            <h4>Los objetos vendibles tienen 7 categorías de tamaño, siendo:</h4>
+            <ul>
+                <li>Diminuto</li>
+                <li>Pequeño</li>
+                <li>Medio</li>
+                <li>Grande</li>
+                <li>Ancho</li>
+                <li>Alto</li>
+                <li>Muy alto</li>
+            </ul>
+            <br>
+            <h4>Los objetos vendibles también tienen 11 categorías de "Tamaño de combate" que determinan el daño de un objeto cuando golpea a un monstruo, siendo:</h4>
+            <ul>
+                <li>0/2/5/8</li>
+                <li>0/3/6/10</li>
+                <li>0/4/8/12</li>
+                <li>0/5/10/15</li>
+                <li>0/10/20/30</li>
+                <li>0/15/30/45</li>
+                <li>0/17/35/52</li>
+                <li>0/20/40/60</li>
+                <li>0/25/50/75</li>
+                <li>0/30/60/90</li>
+                <li>0/40/80/120</li>
+            </ul>
+            <br>
+            <p>Cualquier objeto vendible en el juego aturdirá a los enemigos "pequeños", pero solo aquellos objetos vendibles que tengan un daño máximo de 30 o más aturdirán a los "enemigos grandes".</p>
+            <p>Los objetos vendibles pueden aturdir sin causar daño alguno.</p>
+            <br>
+            <h4>Pequeños enemigos:</h4>
+            <ul>
+                <li><a href="/enemigos/Niño de la sombra.html">Niño de la sombra</a></li>
+                <li><a href="/enemigos/Gnomo.html">Gnomo</a></li>
+                <li><a href="/enemigos/Escupidor.html">Escupidor</a></li>
+                <li><a href="/enemigos/Rugrat.html">Rugrat</a></li>
+                <li><a href="/enemigos/Animal.html">Animal</a></li>
+                <li><a href="/enemigos/Upscream.html">Upscream</a></li>
+                <li><a href="/enemigos/Chef.html">Chef</a></li>
+                <li><a href="/enemigos/Oculto.html">Oculto</a></li>
+                <li><a href="/enemigos/Petardo.html">Petardo</a></li>
+            </ul>
+            <br>
+            <h4>Grandes enemigos:</h4>
+            <ul>
+                <li><a href="/enemigos/Bowtie.html">Bowtie</a></li>
+                <li><a href="/enemigos/Mentalista.html">Mentalista</a></li>
+                <li><a href="/enemigos/Jefe.html">Jefe</a></li>
+                <li><a href="/enemigos/Túnica.html">Túnica</a></li>
+                <li><a href="/enemigos/Cazador.html">Cazador</a></li>
+                <li><a href="/enemigos/Segador.html">Segador</a></li>
+                <li><a href="/enemigos/Payaso.html">Payaso</a></li>
+                <li><a href="/enemigos/Trudge.html">Trudge</a></li>
+            </ul>
+            <br>
+            <h4>No puede ser aturdido ni dañado:</h4>
+            <ul>
+                <li><a href="/enemigos/Depredador maximo.html">Depredador máximo</a></li>
+                <li><a href="/enemigos/Mirón.html">Mirón</a></li>
+            </ul>
+            <br>
+            <p>Si el Dron indestructible está conectado al objeto, no puede aturdir ni golpear a los monstruos , sin embargo aturdirá a los jugadores sin causarles daño.</p>
+            <p>A pesar del nombre " Dron Indestructible ", los objetos no perderán su valor como se esperaba, pero sí tendrán interacciones especiales intactas (ruidos de caja de animales, explosiones de barriles, rotura de caja de escoba, etc.)</p>
+            <br>
+            <h4>También existen 11 categorías de valor, siendo:</h4>
+            <ul>
+                <li>Muy barato (menos de $300)</li>
+                <li>Barato- ($300-$450)</li>
+                <li>Barato ($500-$650)</li>
+                <li>Barato+ ($850-$1100)</li>
+                <li>Barato++ ($1200-$2000)</li>
+                <li>Mediano ($2000-$3000)</li>
+                <li>Mediano+ ($3500-$4500)</li>
+                <li>Alto ($5500-$7500)</li>
+                <li>Alto+ ($9500-$12000)</li>
+                <li>Caro ($18000-$25000)</li>
+                <li>Caro+ ($30000-$45000)</li>
+            </ul>
+            <br>
+            <p>Algunos objetos valiosos están clasificados como trampas , lo que significa que tienen la posibilidad de dañar al jugador o atraer enemigos.</p>
+            <p>Las interacciones de las trampas que se detallarán a continuación se activan aleatoriamente al interactuar el jugador con un objeto. Un fallo en la pantalla indica que la trampa se ha activado.</p>
+            <br>
 
             <table>
-
-                <tr>
-                    <th>Nombre del item</th>
+                <tr class="titulos">
+                    <th class="esq-arriba-izq">Nombre del item</th>
                     <th>Imágen</th>
                     <th>Valor</th>
                     <th>Tamaño</th>
@@ -114,11 +112,11 @@
                     <th>Interacción con trampas</th>
                     <th>Frágil</th>
                     <th>Mapa</th>
-                    <th>Detalle</th>
+                    <th class="esq-arriba-der">Detalle</th>
                 </tr>
                 <tr>
                     <td class="item">Anillo de esmeralda</td>
-                    <td><img src="venta/img/Emerald_Ring.webp" alt="Imágen anillo de esmeralda"></td>
+                    <td class="img-tabla"><img src="venta/img/Emerald_Ring.webp" alt="Imágen anillo de esmeralda"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -129,7 +127,7 @@
                 </tr>
                 <tr>
                     <td class="item">Copa</td>
-                    <td><img src="venta/img/Goblet.webp" alt="Imágen copa"></td>
+                    <td class="img-tabla"><img src="venta/img/Goblet.webp" alt="Imágen copa"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -140,7 +138,7 @@
                 </tr>
                 <tr>
                     <td class="item">Ocarina</td>
-                    <td><img src="venta/img/Ocarina.webp" alt="Imágen ocarina"></td>
+                    <td class="img-tabla"><img src="venta/img/Ocarina.webp" alt="Imágen ocarina"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -151,7 +149,7 @@
                 </tr>
                 <tr>
                     <td class="item">Reloj de bolsillo</td>
-                    <td><img src="venta/img/PocketWatchWiki.webp" alt="Imágen reloj de bolsillo"></td>
+                    <td class="img-tabla"><img src="venta/img/PocketWatchWiki.webp" alt="Imágen reloj de bolsillo"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -162,7 +160,7 @@
                 </tr>
                 <tr>
                     <td class="item">Taza de uranio</td>
-                    <td><img src="venta/img/Uranium_Mug.webp" alt="Imágen taza de uranio"></td>
+                    <td class="img-tabla"><img src="venta/img/Uranium_Mug.webp" alt="Imágen taza de uranio"></td>
                     <td class="precio">Barato++</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -173,7 +171,7 @@
                 </tr>
                 <tr>
                     <td class="item">Diamante</td>
-                    <td><img src="venta/img/Diamond.webp" alt="Imágen diamante"></td>
+                    <td class="img-tabla"><img src="venta/img/Diamond.webp" alt="Imágen diamante"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Diminuto</td>
                     <td class="daño">0/2/5/8</td>
@@ -184,7 +182,7 @@
                 </tr>
                 <tr>
                     <td class="item">Pequeño excedente valioso</td>
-                    <td><img src="venta/img/Small_Surplus.webp" alt="Imágen pequeño excedente valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/Small_Surplus.webp" alt="Imágen pequeño excedente valioso"></td>
                     <td class="precio">Muy barato - Medio+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -195,7 +193,7 @@
                 </tr>
                 <tr>
                     <td class="item">Corona</td>
-                    <td><img src="venta/img/Crown.webp" alt="Imágen corona"></td>
+                    <td class="img-tabla"><img src="venta/img/Crown.webp" alt="Imágen corona"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/2/5/8</td>
@@ -206,7 +204,7 @@
                 </tr>
                 <tr>
                     <td class="item">Muñeca</td>
-                    <td><img src="venta/img/Doll.webp" alt="Imágen muñeca"></td>
+                    <td class="img-tabla"><img src="venta/img/Doll.webp" alt="Imágen muñeca"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -217,7 +215,7 @@
                 </tr>
                 <tr>
                     <td class="item">Dinero</td>
-                    <td><img src="venta/img/Money.webp" alt="Imágen dinero"></td>
+                    <td class="img-tabla"><img src="venta/img/Money.webp" alt="Imágen dinero"></td>
                     <td class="precio">Barato</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -228,7 +226,7 @@
                 </tr>
                 <tr>
                     <td class="item">Rana</td>
-                    <td><img src="venta/img/Frog.webp" alt="Imágen rana"></td>
+                    <td class="img-tabla"><img src="venta/img/Frog.webp" alt="Imágen rana"></td>
                     <td class="precio">Barato+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/2/5/8</td>
@@ -239,7 +237,7 @@
                 </tr>
                 <tr>
                     <td class="item">Caja de gemas</td>
-                    <td><img src="venta/img/Gem_Box.webp" alt="Imágen caja de gemas"></td>
+                    <td class="img-tabla"><img src="venta/img/Gem_Box.webp" alt="Imágen caja de gemas"></td>
                     <td class="precio">Barato+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -250,7 +248,7 @@
                 </tr>
                 <tr>
                     <td class="item">Mono de juguete</td>
-                    <td><img src="venta/img/Monkey.webp" alt="Imágen mono de juguete"></td>
+                    <td class="img-tabla"><img src="venta/img/Monkey.webp" alt="Imágen mono de juguete"></td>
                     <td class="precio">Barato+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -261,7 +259,7 @@
                 </tr>
                 <tr>
                     <td class="item">Árbol bonsái</td>
-                    <td><img src="venta/img/Bonsai.webp" alt="Imágen árbol bonsái"></td>
+                    <td class="img-tabla"><img src="venta/img/Bonsai.webp" alt="Imágen árbol bonsái"></td>
                     <td class="precio">Barato+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -272,7 +270,7 @@
                 </tr>
                 <tr>
                     <td class="item">Pequeño enemigo valioso</td>
-                    <td><img src="venta/img/SmallEnemyValuableWiki.webp" alt="Imágen pequeño enemigo valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/SmallEnemyValuableWiki.webp" alt="Imágen pequeño enemigo valioso"></td>
                     <td class="precio">Barato+ - medio</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/3/6/10</td>
@@ -283,7 +281,7 @@
                 </tr>
                 <tr>
                     <td class="item">Jarrón pequeño</td>
-                    <td><img src="venta/img/SmallVaseWIki.webp" alt="Imágen jarrón pequeño"></td>
+                    <td class="img-tabla"><img src="venta/img/SmallVaseWIki.webp" alt="Imágen jarrón pequeño"></td>
                     <td class="precio">Barato++</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/2/5/8</td>
@@ -294,7 +292,7 @@
                 </tr>
                 <tr>
                     <td class="item">Globo</td>
-                    <td><img src="venta/img/Globe.webp" alt="Imágen globo"></td>
+                    <td class="img-tabla"><img src="venta/img/Globe.webp" alt="Imágen globo"></td>
                     <td class="precio">Barato++</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -305,7 +303,7 @@
                 </tr>
                 <tr>
                     <td class="item">Disco duro</td>
-                    <td><img src="venta/img/HDD.webp" alt="Imágen disco duro"></td>
+                    <td class="img-tabla"><img src="venta/img/HDD.webp" alt="Imágen disco duro"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/10/20/30</td>
@@ -316,7 +314,7 @@
                 </tr>
                 <tr>
                     <td class="item">Libro de masticar</td>
-                    <td><img src="venta/img/Chomp_Book.webp" alt="Imágen libro de masticar"></td>
+                    <td class="img-tabla"><img src="venta/img/Chomp_Book.webp" alt="Imágen libro de masticar"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/2/5/8</td>
@@ -327,7 +325,7 @@
                 </tr>
                 <tr>
                     <td class="item">Poción de amor</td>
-                    <td><img src="venta/img/Love_Potion.webp" alt="Imágen poción de amor"></td>
+                    <td class="img-tabla"><img src="venta/img/Love_Potion.webp" alt="Imágen poción de amor"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -338,7 +336,7 @@
                 </tr>
                 <tr>
                     <td class="item">Placa de uranio</td>
-                    <td><img src="venta/img/Uranium_Plate.webp" alt="Imágen placa de uranio"></td>
+                    <td class="img-tabla"><img src="venta/img/Uranium_Plate.webp" alt="Imágen placa de uranio"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/2/5/8</td>
@@ -349,7 +347,7 @@
                 </tr>
                 <tr>
                     <td class="item">Caja de música</td>
-                    <td><img src="venta/img/Music_Box.webp" alt="Imágen caja de música"></td>
+                    <td class="img-tabla"><img src="venta/img/Music_Box.webp" alt="Imágen caja de música"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Pequeño</td>
                     <td class="daño">0/5/10/15</td>
@@ -360,7 +358,7 @@
                 </tr>
                 <tr>
                     <td class="item">Computadora portátil</td>
-                    <td><img src="venta/img/Laptop.webp" alt="Imágen computadora portátil"></td>
+                    <td class="img-tabla"><img src="venta/img/Laptop.webp" alt="Imágen computadora portátil"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -371,7 +369,7 @@
                 </tr>
                 <tr>
                     <td class="item">Paquete de muestra de seis</td>
-                    <td><img src="venta/img/Sample_6-Pack.webp" alt="Imágen paquete de muestra de seis"></td>
+                    <td class="img-tabla"><img src="venta/img/Sample_6-Pack.webp" alt="Imágen paquete de muestra de seis"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/10/20/30</td>
@@ -382,7 +380,7 @@
                 </tr>
                 <tr>
                     <td class="item">Muestra</td>
-                    <td><img src="venta/img/Sample.webp" alt="Imágen muestra"></td>
+                    <td class="img-tabla"><img src="venta/img/Sample.webp" alt="Imágen muestra"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -393,7 +391,7 @@
                 </tr>
                 <tr>
                     <td class="item">Botella</td>
-                    <td><img src="venta/img/Bottle.webp" alt="Imágen botella"></td>
+                    <td class="img-tabla"><img src="venta/img/Bottle.webp" alt="Imágen botella"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -404,7 +402,7 @@
                 </tr>
                 <tr>
                     <td class="item">Payaso</td>
-                    <td><img src="venta/img/Clown.webp" alt="Imágen payaso"></td>
+                    <td class="img-tabla"><img src="venta/img/Clown.webp" alt="Imágen payaso"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/10/20/30</td>
@@ -415,7 +413,7 @@
                 </tr>
                 <tr>
                     <td class="item">Computadora</td>
-                    <td><img src="venta/img/Computer.webp" alt="Imágen computadora"></td>
+                    <td class="img-tabla"><img src="venta/img/Computer.webp" alt="Imágen computadora"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/10/20/30</td>
@@ -426,7 +424,7 @@
                 </tr>
                 <tr>
                     <td class="item">Admirador</td>
-                    <td><img src="venta/img/Fan.webp" alt="Imágen admirador"></td>
+                    <td class="img-tabla"><img src="venta/img/Fan.webp" alt="Imágen admirador"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -437,7 +435,7 @@
                 </tr>
                 <tr>
                     <td class="item">Gramófono</td>
-                    <td><img src="venta/img/GramophoneWIki.webp" alt="Imágen gramófono"></td>
+                    <td class="img-tabla"><img src="venta/img/GramophoneWIki.webp" alt="Imágen gramófono"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/10/20/30</td>
@@ -448,7 +446,7 @@
                 </tr>
                 <tr>
                     <td class="item">Radio</td>
-                    <td><img src="venta/img/Radio.webp" alt="Imágen radio"></td>
+                    <td class="img-tabla"><img src="venta/img/Radio.webp" alt="Imágen radio"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/15/30/45</td>
@@ -459,7 +457,7 @@
                 </tr>
                 <tr>
                     <td class="item">Trofeo</td>
-                    <td><img src="venta/img/Trophy.webp" alt="Imágen trofeo"></td>
+                    <td class="img-tabla"><img src="venta/img/Trophy.webp" alt="Imágen trofeo"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -470,7 +468,7 @@
                 </tr>
                 <tr>
                     <td class="item">Jarrón mediano</td>
-                    <td><img src="venta/img/Medium_Vase.webp" alt="Imágen jarrón mediano"></td>
+                    <td class="img-tabla"><img src="venta/img/Medium_Vase.webp" alt="Imágen jarrón mediano"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -481,7 +479,7 @@
                 </tr>
                 <tr>
                     <td class="item">Cabeza de duende</td>
-                    <td><img src="venta/img/Goblin.webp" alt="Imágen cabeza de duende"></td>
+                    <td class="img-tabla"><img src="venta/img/Goblin.webp" alt="Imágen cabeza de duende"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/15/30/45</td>
@@ -492,7 +490,7 @@
                 </tr>
                 <tr>
                     <td class="item">Cristal de poder</td>
-                    <td><img src="venta/img/Power_Crystal.webp" alt="Imágen cristal de poder"></td>
+                    <td class="img-tabla"><img src="venta/img/Power_Crystal.webp" alt="Imágen cristal de poder"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -503,7 +501,7 @@
                 </tr>
                 <tr>
                     <td class="item">Tanque de propano</td>
-                    <td><img src="venta/img/Propane_Tank.webp" alt="Imágen tanque de propano"></td>
+                    <td class="img-tabla"><img src="venta/img/Propane_Tank.webp" alt="Imágen tanque de propano"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -514,7 +512,7 @@
                 </tr>
                 <tr>
                     <td class="item">Barco en una botella</td>
-                    <td><img src="venta/img/Ship_in_a_Bottle.webp" alt="Imágen barco en una botella"></td>
+                    <td class="img-tabla"><img src="venta/img/Ship_in_a_Bottle.webp" alt="Imágen barco en una botella"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -525,7 +523,7 @@
                 </tr>
                 <tr>
                     <td class="item">Enemigo mediano valioso</td>
-                    <td><img src="venta/img/MediumEnemyValuableWiki.webp" alt="Imágen enemigo mediano valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/MediumEnemyValuableWiki.webp" alt="Imágen enemigo mediano valioso"></td>
                     <td class="precio">Medio+ - Alto</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/4/8/12</td>
@@ -536,7 +534,7 @@
                 </tr>
                 <tr>
                     <td class="item">Impresora 3D</td>
-                    <td><img src="venta/img/3D_Printer.webp" alt="Imágen impresora 3D"></td>
+                    <td class="img-tabla"><img src="venta/img/3D_Printer.webp" alt="Imágen impresora 3D"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/15/30/45</td>
@@ -547,7 +545,7 @@
                 </tr>
                 <tr>
                     <td class="item">Reloj de arena</td>
-                    <td><img src="venta/img/Hourglass.webp" alt="Imágen reloj de arena"></td>
+                    <td class="img-tabla"><img src="venta/img/Hourglass.webp" alt="Imágen reloj de arena"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/5/10/15</td>
@@ -558,7 +556,7 @@
                 </tr>
                 <tr>
                     <td class="item">Excedente medio valioso</td>
-                    <td><img src="venta/img/Medium_Surplus.webp" alt="Imágen excedente medio valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/Medium_Surplus.webp" alt="Imágen excedente medio valioso"></td>
                     <td class="precio">Alto - Alto+</td>
                     <td class="tamaño">Medio</td>
                     <td class="daño">0/10/20/30</td>
@@ -569,7 +567,7 @@
                 </tr>
                 <tr>
                     <td class="item">Gran muestra</td>
-                    <td><img src="venta/img/Big_Sample.webp" alt="Imágen gran muestra"></td>
+                    <td class="img-tabla"><img src="venta/img/Big_Sample.webp" alt="Imágen gran muestra"></td>
                     <td class="precio">Medio</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/5/10/15</td>
@@ -580,7 +578,7 @@
                 </tr>
                 <tr>
                     <td class="item">Lanzallamas</td>
-                    <td><img src="venta/img/Flamethrower.webp" alt="Imágen Lanzallamas"></td>
+                    <td class="img-tabla"><img src="venta/img/Flamethrower.webp" alt="Imágen Lanzallamas"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/20/40/60</td>
@@ -594,7 +592,7 @@
                 </tr>
                 <tr>
                     <td class="item">Guitarra</td>
-                    <td><img src="venta/img/Guitar.webp" alt="Imágen guitarra"></td>
+                    <td class="img-tabla"><img src="venta/img/Guitar.webp" alt="Imágen guitarra"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/15/30/45</td>
@@ -605,7 +603,7 @@
                 </tr>
                 <tr>
                     <td class="item">Enfriador de muestras</td>
-                    <td><img src="venta/img/Sample_Cooler.webp" alt="Imágen enfriador de muestras"></td>
+                    <td class="img-tabla"><img src="venta/img/Sample_Cooler.webp" alt="Imágen enfriador de muestras"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/15/30/45</td>
@@ -616,7 +614,7 @@
                 </tr>
                 <tr>
                     <td class="item">Exhibición de diamantes</td>
-                    <td><img src="venta/img/Diamond_Display.webp" alt="Imágen exhibición de diamantes"></td>
+                    <td class="img-tabla"><img src="venta/img/Diamond_Display.webp" alt="Imágen exhibición de diamantes"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/15/30/45</td>
@@ -627,7 +625,7 @@
                 </tr>
                 <tr>
                     <td class="item">Sierra de hielo</td>
-                    <td><img src="venta/img/Ice_Saw.webp" alt="Imágen sierra de hielo"></td>
+                    <td class="img-tabla"><img src="venta/img/Ice_Saw.webp" alt="Imágen sierra de hielo"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/5/10/15</td>
@@ -638,7 +636,7 @@
                 </tr>
                 <tr>
                     <td class="item">Poción maestra</td>
-                    <td><img src="venta/img/Master_Potion.webp" alt="Imágen poción maestra"></td>
+                    <td class="img-tabla"><img src="venta/img/Master_Potion.webp" alt="Imágen poción maestra"></td>
                     <td class="precio">Medio+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/15/30/45</td>
@@ -649,7 +647,7 @@
                 </tr>
                 <tr>
                     <td class="item">Gran enemigo valioso</td>
-                    <td><img src="venta/img/BigEnemyValuableWiki.webp" alt="Imágen gran enemigo valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/BigEnemyValuableWiki.webp" alt="Imágen gran enemigo valioso"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/5/10/15</td>
@@ -660,7 +658,7 @@
                 </tr>
                 <tr>
                     <td class="item">Muñeca que grita</td>
-                    <td><img src="venta/img/ScreamDollWiki.webp" alt="Imágen muñeca que grita"></td>
+                    <td class="img-tabla"><img src="venta/img/ScreamDollWiki.webp" alt="Imágen muñeca que grita"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/10/20/30</td>
@@ -671,7 +669,7 @@
                 </tr>
                 <tr>
                     <td class="item">Televisión</td>
-                    <td><img src="venta/img/Television.webp" alt="Imágen televisión"></td>
+                    <td class="img-tabla"><img src="venta/img/Television.webp" alt="Imágen televisión"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/20/40/60</td>
@@ -682,7 +680,7 @@
                 </tr>
                 <tr>
                     <td class="item">Jarrón grande</td>
-                    <td><img src="venta/img/Big_Vase.webp" alt="Imágen jarrón grande"></td>
+                    <td class="img-tabla"><img src="venta/img/Big_Vase.webp" alt="Imágen jarrón grande"></td>
                     <td class="precio">Alto</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/20/40/60</td>
@@ -693,7 +691,7 @@
                 </tr>
                 <tr>
                     <td class="item">Cubo del conocimiento</td>
-                    <td><img src="venta/img/Cube_of_Knowledge.webp" alt="Imágen cubo del conocimiento"></td>
+                    <td class="img-tabla"><img src="venta/img/Cube_of_Knowledge.webp" alt="Imágen cubo del conocimiento"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/30/60/90</td>
@@ -704,7 +702,7 @@
                 </tr>
                 <tr>
                     <td class="item">Barril</td>
-                    <td><img src="venta/img/Barrel.webp" alt="Imágen barril"></td>
+                    <td class="img-tabla"><img src="venta/img/Barrel.webp" alt="Imágen barril"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/20/40/60</td>
@@ -715,7 +713,7 @@
                 </tr>
                 <tr>
                     <td class="item">Pierna de criatura</td>
-                    <td><img src="venta/img/Creature_Leg.webp" alt="Imágen pierna de criatura"></td>
+                    <td class="img-tabla"><img src="venta/img/Creature_Leg.webp" alt="Imágen pierna de criatura"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/25/50/75</td>
@@ -726,7 +724,7 @@
                 </tr>
                 <tr>
                     <td class="item">Gran excedente valioso</td>
-                    <td><img src="venta/img/Large_Surplus.webp" alt="Imágen gran excedente valioso"></td>
+                    <td class="img-tabla"><img src="venta/img/Large_Surplus.webp" alt="Imágen gran excedente valioso"></td>
                     <td class="precio">Alto+ - Caro+</td>
                     <td class="tamaño">Grande</td>
                     <td class="daño">0/15/30/45</td>
@@ -737,7 +735,7 @@
                 </tr>
                 <tr>
                     <td class="item">Bloque de hielo</td>
-                    <td><img src="venta/img/Ice_Block.webp" alt="Imágen bloque de hielo"></td>
+                    <td class="img-tabla"><img src="venta/img/Ice_Block.webp" alt="Imágen bloque de hielo"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Ancho</td>
                     <td class="daño">0/25/50/75</td>
@@ -748,7 +746,7 @@
                 </tr>
                 <tr>
                     <td class="item">Dinosaurio</td>
-                    <td><img src="venta/img/Dinosaur.webp" alt="Imágen dinosaurio"></td>
+                    <td class="img-tabla"><img src="venta/img/Dinosaur.webp" alt="Imágen dinosaurio"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Ancho</td>
                     <td class="daño">0/20/40/60</td>
@@ -759,7 +757,7 @@
                 </tr>
                 <tr>
                     <td class="item">Caja para animales</td>
-                    <td><img src="venta/img/Animal_Crate.webp" alt="Imágen caja para animales"></td>
+                    <td class="img-tabla"><img src="venta/img/Animal_Crate.webp" alt="Imágen caja para animales"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Ancho</td>
                     <td class="daño">0/20/40/60</td>
@@ -773,7 +771,7 @@
                 </tr>
                 <tr>
                     <td class="item">Piano</td>
-                    <td><img src="venta/img/Piano.webp" alt="Imágen piano"></td>
+                    <td class="img-tabla"><img src="venta/img/Piano.webp" alt="Imágen piano"></td>
                     <td class="precio">Caro+</td>
                     <td class="tamaño">Ancho</td>
                     <td class="daño">0/40/80/120</td>
@@ -784,7 +782,7 @@
                 </tr>
                 <tr>
                     <td class="item">Estatua del grifo</td>
-                    <td><img src="venta/img/Griffin_Statue.webp" alt="Imágen estatua del grifo"></td>
+                    <td class="img-tabla"><img src="venta/img/Griffin_Statue.webp" alt="Imágen estatua del grifo"></td>
                     <td class="precio">Caro+</td>
                     <td class="tamaño">Ancho</td>
                     <td class="daño">0/40/80/120</td>
@@ -795,7 +793,7 @@
                 </tr>
                 <tr>
                     <td class="item">Espada</td>
-                    <td><img src="venta/img/Sword_Valuable.webp" alt="Imágen espada"></td>
+                    <td class="img-tabla"><img src="venta/img/Sword_Valuable.webp" alt="Imágen espada"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Alto</td>
                     <td class="daño">0/15/30/45</td>
@@ -806,7 +804,7 @@
                 </tr>
                 <tr>
                     <td class="item">Estación Científica</td>
-                    <td><img src="venta/img/Science_Station.webp" alt="Imágen estación Científica"></td>
+                    <td class="img-tabla"><img src="venta/img/Science_Station.webp" alt="Imágen estación Científica"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Alto</td>
                     <td class="daño">0/25/50/75</td>
@@ -817,7 +815,7 @@
                 </tr>
                 <tr>
                     <td class="item">Arpa</td>
-                    <td><img src="venta/img/Harp.webp" alt="Imágen arpa"></td>
+                    <td class="img-tabla"><img src="venta/img/Harp.webp" alt="Imágen arpa"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Alto</td>
                     <td class="daño">0/20/40/60</td>
@@ -828,7 +826,7 @@
                 </tr>
                 <tr>
                     <td class="item">Cuadro</td>
-                    <td><img src="venta/img/Painting.webp" alt="Imágen cuadro"></td>
+                    <td class="img-tabla"><img src="venta/img/Painting.webp" alt="Imágen cuadro"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Alto</td>
                     <td class="daño">0/20/40/60</td>
@@ -839,7 +837,7 @@
                 </tr>
                 <tr>
                     <td class="item">El bastón de Dumgolf</td>
-                    <td><img src="venta/img/Dumgolf_Staff.webp" alt="Imágen el bastón de Dumgolf"></td>
+                    <td class="img-tabla"><img src="venta/img/Dumgolf_Staff.webp" alt="Imágen el bastón de Dumgolf"></td>
                     <td class="precio">Caro+</td>
                     <td class="tamaño">Alto</td>
                     <td class="daño">0/17/35/52</td>
@@ -853,7 +851,7 @@
                 </tr>
                 <tr>
                     <td class="item">Escoba</td>
-                    <td><img src="venta/img/Broom.webp" alt="Imágen escoba"></td>
+                    <td class="img-tabla"><img src="venta/img/Broom.webp" alt="Imágen escoba"></td>
                     <td class="precio">Alto+</td>
                     <td class="tamaño">Muy alto</td>
                     <td class="daño">0/17/35/52</td>
@@ -867,7 +865,7 @@
                 </tr>
                 <tr>
                     <td class="item">Estatua dorada</td>
-                    <td><img src="venta/img/Golden_Statue.webp" alt="Imágen estatua dorada"></td>
+                    <td class="img-tabla"><img src="venta/img/Golden_Statue.webp" alt="Imágen estatua dorada"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Muy alto</td>
                     <td class="daño">0/20/40/60</td>
@@ -878,7 +876,7 @@
                 </tr>
                 <tr>
                     <td class="item">Rack de servidores</td>
-                    <td><img src="venta/img/Server_Rack.webp" alt="Imágen rack de servidores"></td>
+                    <td class="img-tabla"><img src="venta/img/Server_Rack.webp" alt="Imágen rack de servidores"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Muy alto</td>
                     <td class="daño">0/25/50/75</td>
@@ -889,7 +887,7 @@
                 </tr>
                 <tr>
                     <td class="item">Reloj de pie</td>
-                    <td><img src="venta/img/Grandfather_Clock.webp" alt="Imágen reloj de pie"></td>
+                    <td class="img-tabla"><img src="venta/img/Grandfather_Clock.webp" alt="Imágen reloj de pie"></td>
                     <td class="precio">Caro</td>
                     <td class="tamaño">Muy alto</td>
                     <td class="daño">0/25/50/75</td>
@@ -900,8 +898,7 @@
                 </tr>
 
             </table>
-
-        </section>
+        </div>
             
     </main>
     

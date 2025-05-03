@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="enemigos.css"/>
     <title>Enemigo-Gnomo</title>
+    
+    <link rel="stylesheet" href="enemigos.css"/>
+    <link rel="shortcut icon" href="img/The_gnome.webp" type="image/xicon">
+
   </head>
   <body>
     <header><a href="/index.html"><img src="img/logo.webp" alt="Logo" class="logo"></a></header>
     <main>
       <div class="detalles">
-        <h2>Gnomo</h2>
-        <img src="img/The_gnome.webp" alt="Imágen Gnomo"/>
+        <img id="gnomo" src="img/The_gnome.webp" alt="Imágen Gnomo"/>
+        <h1>Gnomo</h1>
+        <br>
         <p>
           Los gnomos son monstruos de nivel 1 que siempre aparecen en grupos de cuatro. Mientras deambulan, se detienen en lugares aleatorios, permaneciendo agrupados con los demás gnomos del nivel. Al detectar a un jugador, atacan cualquier objeto de valor cercano; de lo contrario, lo persiguen y lo atacan.
         </p>
@@ -20,7 +24,7 @@
           Al ser lanzados, los gnomos infligen 0/3/6/10 de daño a los enemigos y 0 de daño a los jugadores. Al impactar, aturden a los jugadores, pero no a los enemigos.
         </p>
         <br>
-        <h3>Características</h3>
+        <h2>Características</h2>
         <hr>
         <ul>
           <li>
@@ -61,7 +65,7 @@
           </li>
         </ul>
         <br>
-        <h3>Consejos</h3>
+        <h2>Consejos</h2>
         <hr>
         <ul class="consejos">
           <li><p>Se pueden levantar sin ninguna fuerza, por lo que es fácil matarlos simplemente golpeándolos contra algo.</p></li>
