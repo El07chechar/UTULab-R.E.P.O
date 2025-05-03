@@ -42,19 +42,56 @@ header {
 }
 
 .detalles {
-    margin: 20px 50px;
+    margin: 20px 30px;
     padding: 25px;
     background: var(--color-bg-div);
+    background-position: center;
     grid-template-columns: repeat(2, auto);
     border-radius: 15px;
 }
 
-.detalles img{
-    width: 350px;
+.portada{
+    width: 450px;
     float: right;
-    margin: 0px 100px;
+    margin: 0px 60px 25px 100px;
     border-radius: 5px;
 }
+
+.imgs {
+    display: grid;
+    grid-template-rows: repeat(1.5, 1fr);
+    float: right;
+}
+
+.gnomo-1{margin-top: 40px;}
+
+.depredador, .depredador-1, .depredador-2 {margin-bottom: 40px;}
+
+.escupidor, .escupidor-1 {width: 350px;}
+
+.animal, .animal-1, .animal-2 {margin-bottom: 45px;}
+
+.upscream, .upscream-1, .upscream-2 {width: 500px; margin-bottom: 55px;}
+
+.chef, .chef-1, .chef-2 {width: 370px;}
+
+.bowtie, .bowtie-1{width: 435px;}
+
+.mentalista, .mentalista-1, .mentalista-2 {width: 410px;}
+
+.calavera, .calavera-1 {width: 400px;}
+
+.jefe, .jefe-1, .jefe-2 {width: 350px;}
+
+.manto, .manto-1, .manto-2 {width: 435px;}
+
+.cazador {width: 300px;}
+
+.destripador, .destripador-1 {width: 425px;}
+
+.payaso, .payaso-1, .payaso-2 {margin-bottom: 60px;}
+
+.trudge, .trudge-1, .trudge-2{width: 360px;}
 
 h2, h3, h4{margin-bottom: 3px; margin-top: 6px;}
 
@@ -65,7 +102,7 @@ hr{
 
 p {margin: 0px 3px;}
 
-p a{color: var(--color-medium); text-decoration: underline;}
+a{color: var(--color-medium); text-decoration: underline;}
 
 .caracteristicas ul li{margin-left: 10px; margin-bottom: 3px;}
 
