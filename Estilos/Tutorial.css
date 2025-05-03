@@ -1,0 +1,65 @@
+:root {
+    --color-light: #FBFBFF;
+    --color-primary: #21008F;
+    --color-medium: #FFD900;
+    --color-bg-div: #1c0b56;
+    --color-dark: #1D1E1F;
+  }
+  
+  body {
+    background-color: var(--color-dark);
+    color: var(--color-medium);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .portada__imagen {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .carta {
+    background-color: var(--color-bg-div);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .carta h1 {
+    color: var(--color-medium);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carta h2 {
+    margin-top: 2rem;
+  }
+  
+  .imagen-tutorial {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
