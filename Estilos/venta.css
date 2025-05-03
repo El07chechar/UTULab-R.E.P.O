@@ -50,10 +50,17 @@ main {display: grid; gap: 16px;}
     border-radius: 15px;
 }
 
+
+
+.imgs {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    float: right;
+}
 .portada{
     width: 500px;
     float: right;
-    margin: 30px 60px 8px 100px;
+    margin: 20px 60px 8px 100px;
     border-radius: 5px;
 }
 
