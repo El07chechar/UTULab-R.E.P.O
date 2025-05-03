@@ -1,0 +1,149 @@
+:root {
+    --color-light: #FBFBFF;
+    --color-primary: #21008F;
+    --color-medium: #FFD900;
+    --color-bg-div: #1c0b56;
+    --color-dark: #1D1E1F;
+}
+
+html {height: 100%;}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--color-primary);
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-family: "Roboto", serif;
+    color: var(--color-medium);
+    overflow-x: hidden;
+    transition: all .4s;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    background: var(--color-dark);
+}
+  
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+
+.detalles {
+    margin: 20px 30px;
+    padding: 25px;
+    background: var(--color-bg-div);
+    background-position: center;
+    grid-template-columns: repeat(2, auto);
+    border-radius: 15px;
+}
+
+.portada{
+    width: 350px;
+    float: right;
+    margin: 8px 60px 8px 100px;
+    border-radius: 5px;
+}
+
+.SBA {width: 400px;}
+
+.DA{
+    width: 500px;
+    height: 250px;
+    margin: 25px 60px 8px 100px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    float: right;
+}
+.SS, .SS-shop {width: 400px; height: 170px;}
+
+.MJS {width: 500px; margin-top: 30px;}
+
+.HMM{width: 500px;}
+
+h1, h2 {margin-bottom: 3px; margin-top: 6px;}
+
+hr{
+    border:2px solid var(--color-primary);
+    margin-bottom: 10px;
+}
+
+p {margin: 0px 3px;}
+
+a{color: var(--color-medium); text-decoration: underline;}table{
+    width: 1400px;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--color-bg-div);
+}
+
+.esq-arriba-izq{border-radius: 25px 0px 0px 0px;}
+.esq-arriba-der{border-radius: 0px 25px 0px 0px;}
+
+table {
+    background: var(--color-primary);
+    border-collapse: collapse;
+    border-radius: 35px;
+    border: none;
+}
+
+.titulos {
+    background: var(--color-medium);
+    color: var(--color-bg-div);
+}
+
+tr{text-align: center;}
+
+th {height: 60px;}
+
+td, th {
+    padding: 8px;
+    border: 2px solid var(--color-bg-div);
+}
+
+.item {width: 140px;}
+
+.img-tabla {width: 400px;}
+table tr td img{width: 350px; border-radius: 8px;}
+
+.precio {width: 120px;}
+
+.tamaño {width: 130px;}
+
+.detalle {width: 300px; padding: 15px;}
+
+.objeto {width: 140px;}
+
+.fuerza {width: 140px;}
+
+.daño {width: 140px;}
+
+.img-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.extra-img img{
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.img-txt{padding: 20px 30px; text-align: center;}
