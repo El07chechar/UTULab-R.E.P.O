@@ -4,32 +4,293 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapa-Estación McJannek</title>
+    
+    <link rel="stylesheet" href="mapas.css"/>
+    <link rel="shortcut icon" href="img/MJS.webp" type="image/xicon">
+
   </head>
   <body>
-    <header><img src="img/logo.webp" alt="logo"></header>
+    <header>
+      <a href="/index.html"><img src="img/logo.webp" alt="Logo" class="logo"></a>
+    </header>
     <main>
       <div class="detalles">
-        <h2>Estación McJannek</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          deleniti nihil debitis id soluta necessitatibus, eveniet rem
-          perferendis nulla a autem quia alias cumque consequatur, dolore sit.
-          Exercitationem, natus nostrum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          deleniti nihil debitis id soluta necessitatibus, eveniet rem
-          perferendis nulla a autem quia alias cumque consequatur, dolore sit.
-          Exercitationem, natus nostrum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          deleniti nihil debitis id soluta necessitatibus, eveniet rem
-          perferendis nulla a autem quia alias cumque consequatur, dolore sit.
-          Exercitationem, natus nostrum.
-        </p>
+        <img class="portada MJS" src="img/MJS.webp" alt="Imágen de la estación McJannek">
+        <h1>Estación McJannek</h1>
+        <br>
+        <p>La Estación McJannek es un laboratorio congelado. En este lugar se pueden encontrar numerosos objetos científicos, como computadoras, tubos de ensayo, microscopios, etc. Afuera está nevando y algunas ventanas están rotas. Además, este laboratorio se encuentra en lo alto de las montañas.</p>
+        <br>
+        <p>Ocasionalmente, los jugadores pueden encontrar una bandera danesa dentro de la estación, lo que sugiere que podría estar ubicada en Dinamarca o Groenlandia, o tener alguna conexión con el país.</p>
+        <br>
+        <p>Exclusivamente en este mapa, los jugadores pueden encontrar un televisor encendido, que muestra una pregunta que dice "¿Sigues viendo 'Moose Fighting Volume 2: Antler Mania'?" que muestra las indicaciones "Continuar viendo" o "Atrás", donde si el jugador elige el primero (que solo se puede interactuar), daría como resultado un salto de alce acompañado de un ligero empujón de física.</p>
+        <br><br>
+
+        <h2>Objetos de valor exclusivos</h2>
+        <hr>
+        <br>
+        <p>Más información sobre objetos de valor <a href="/objetosVenta.html">aquí</a>.</p>
+        <br>
+        <table>
+          <tr class="titulos">
+            <th class="esq-arriba-izq">Nombre del item</th>
+            <th>Imágen</th>
+            <th>Valor</th>
+            <th>Tamaño</th>
+            <th class="esq-arriba-der">Detalle</th>
+          </tr>
+          <tr>
+              <td class="item">Árbol bonsái</td>
+              <td class="img-tabla"><img src="/venta/img/Bonsai.webp" alt="Imágen árbol bonsái"></td>
+              <td class="precio">Barato+</td>
+              <td class="tamaño">Pequeño</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Disco duro</td>
+              <td class="img-tabla"><img src="/venta/img/HDD.webp" alt="Imágen disco duro"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Pequeño</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Computadora portátil</td>
+              <td class="img-tabla"><img src="/venta/img/Laptop.webp" alt="Imágen computadora portátil"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Computadora</td>
+              <td class="img-tabla"><img src="/venta/img/Computer.webp" alt="Imágen computadora"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Muestra</td>
+              <td class="img-tabla"><img src="/venta/img/Sample.webp" alt="Imágen muestra"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Paquete de muestra de seis</td>
+              <td class="img-tabla"><img src="/venta/img/Sample_6-Pack.webp" alt="Imágen paquete de muestra de seis"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Ventilador</td>
+              <td class="img-tabla"><img src="/venta/img/Fan.webp" alt="Imágen Ventilador"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle">Es una trampa. Al sostenerla, produce una corriente de aire que arrastra todo lo que se le cruce.</td>
+          </tr>
+          <tr>
+              <td class="item">Tanque de propano</td>
+              <td class="img-tabla"><img src="/venta/img/Propane_Tank.webp" alt="Imágen tanque de propano"></td>
+              <td class="precio">Medio+</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle">Es una trampa. Si se daña, emite llamas durante aproximadamente 14 segundos (puede ser aleatorio). Inflige 2 de daño a los monstruos (hasta 30 DPS) y 1 de daño a los jugadores (hasta 19 DPS) por cada ciclo de daño. Al romperse, crea una explosión que inflige 100 de daño a los monstruos y 50 de daño a los jugadores.</td>
+          </tr>
+          <tr>
+              <td class="item">Impresora 3D</td>
+              <td class="img-tabla"><img src="/venta/img/3D_Printer.webp" alt="Imágen impresora 3D"></td>
+              <td class="precio">Alto</td>
+              <td class="tamaño">Medio</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Gran muestra</td>
+              <td class="img-tabla"><img src="/venta/img/Big_Sample.webp" alt="Imágen gran muestra"></td>
+              <td class="precio">Medio</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Enfriador de muestras</td>
+              <td class="img-tabla"><img src="/venta/img/Sample_Cooler.webp" alt="Imágen enfriador de muestras"></td>
+              <td class="precio">Medio+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Lanzallamas</td>
+              <td class="img-tabla"><img src="/venta/img/Flamethrower.webp" alt="Imágen Lanzallamas"></td>
+              <td class="precio">Medio+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle">Es una trampa. Al impactar, libera un chorro de llamas. Al sujetarla por el mango rojo, la llama se enciende continuamente hasta extinguirse. Inflige 15 de daño a monstruos (hasta 48 DPS) y 10 de daño a jugadores (hasta 40 DPS) por cada ciclo de daño. Tiene 10 segundos de combustible.</td>
+          </tr>
+          <tr>
+              <td class="item">Guitarra</td>
+              <td class="img-tabla"><img src="/venta/img/Guitar.webp" alt="Imágen guitarra"></td>
+              <td class="precio">Medio+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle">Si tocas las cuerdas emitirán un sonido.</td>
+          </tr>
+          <tr>
+              <td class="item">Sierra de hielo</td>
+              <td class="img-tabla"><img src="/venta/img/Ice_Saw.webp" alt="Imágen sierra de hielo"></td>
+              <td class="precio">Medio+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle">Es una trampa. Al interactuar, se activa y causa daño a todo lo que toca la hoja de sierra. Puede activarse durante un tiempo determinado sin posibilidad de desactivarse. Inflige 5 de daño a los enemigos (hasta 17 DPS) y 1 de daño a los jugadores (hasta 8,2 DPS).</td>
+          </tr>
+          <tr>
+              <td class="item">Pierna de criatura</td>
+              <td class="img-tabla"><img src="/venta/img/Creature_Leg.webp" alt="Imágen pierna de criatura"></td>
+              <td class="precio">Alto+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Barril</td>
+              <td class="img-tabla"><img src="/venta/img/Barrel.webp" alt="Imágen barril"></td>
+              <td class="precio">Alto+</td>
+              <td class="tamaño">Grande</td>
+              <td class="detalle">Si el barril recibe tres impactos, causará varias explosiones rapidísimas, cada una infligiendo 100 de daño tanto a monstruos como a jugadores (el daño siempre es el mismo, aunque debe calcularse según el tamaño y la velocidad de la explosión). Puede explotar incluso bajo el efecto de un dron indestructible, pero el barril no se destruirá. Esto lo convierte en un arma excelente, pero ten en cuenta que, debido a un error, al desactivar el dron después de que el barril haya explotado, volverá a explotar y lo destruirá.</td>
+          </tr>
+          <tr>
+              <td class="item">Bloque de hielo</td>
+              <td class="img-tabla"><img src="/venta/img/Ice_Block.webp" alt="Imágen bloque de hielo"></td>
+              <td class="precio">Alto+</td>
+              <td class="tamaño">Ancho</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Estación científica</td>
+              <td class="img-tabla"><img src="/venta/img/Science_Station.webp" alt="Imágen estación científica"></td>
+              <td class="precio">Caro</td>
+              <td class="tamaño">Alto</td>
+              <td class="detalle"></td>
+          </tr>
+          <tr>
+              <td class="item">Rack de servidores</td>
+              <td class="img-tabla"><img src="/venta/img/Server_Rack.webp" alt="Imágen rack de servidores"></td>
+              <td class="precio">Caro</td>
+              <td class="tamaño">Muy alto</td>
+              <td class="detalle"></td>
+          </tr>
+
+        </table>
+        <br>
+
+        <h2>Accesorios físicos</h2>
+        <hr>
+        <br>
+        <table>
+          <tr class="titulos">
+              <th class="esq-arriba-izq">Nombre del objeto</th>
+              <th>Imágen</th>
+              <th>Umbral de fuerza</th>
+              <th class="esq-arriba-der">Daño</th>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta de armario pequeña</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Smallclosetwikimanor.webp" alt="Imágen puerta de armario pequeña"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">2/5/8</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta de armario grande</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Bigclosetwikimanor.webp" alt="Imágen puerta de armario grande"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">3/6/10</td>
+          </tr>
+          <tr>
+              <td class="objeto">Tapa del inodoro</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Toilet3lidwikistation.webp" alt="Imágen tapa del inodoro"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">3/6/10</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puertas de refrigerador</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Refrigeratorwikistation.webp" alt="Imágen puertas de refrigerador"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">10/5/15</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puertas para vehículos de nieve</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Snowvehiclewikistation.webp" alt="Imágen puertas para vehículos de nieve"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">15/30/45</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta del casillero</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Lockerdoorswikistation.webp" alt="Imágen puerta del casillero"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">20/10/30</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta del baño</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Toilet2doorwikistation.webp" alt="Imágen puerta del baño"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">20/10/30</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta de la cabina del baño</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Toiletdoorwikistation.webp" alt="Imágen puerta de la cabina del baño"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">20/10/30</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta del contenedor</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Containerdoorswikistation.webp" alt="Imágen puerta del contenedor"></td>
+              <td class="fuerza">0</td>
+              <td class="daño">17/35/52</td>
+          </tr>
+          <tr>
+              <td class="objeto">Puerta</td>
+              <td class="img-tabla"><img src="/mapas/img/MJS/Doorwikistation.webp" alt="Imágen puerta"></td>
+              <td class="fuerza">2-3</td>
+              <td class="daño">25/50/75</td>
+          </tr>
+
+        </table>
+        <br>
+        
+        <h2>Imágenes de la ubicación</h2>
+        <hr>
+        <br>
+        <div class="img-content">
+          
+          <div class="extra-img">
+            <img src="img/MJS/Escaleras.webp" alt="">
+            <div class="img-txt">
+              <h4>Habitación con escaleras</h4>
+            </div>
+          </div>
+
+          <div class="extra-img">
+            <img src="img/MJS/Trastero.webp" alt="">
+            <div class="img-txt">
+              <h4>Trastero</h4>
+            </div>
+          </div>
+
+          <div class="extra-img">
+            <img src="img/MJS/Oficina.webp" alt="">
+            <div class="img-txt">
+              <h4>Oficina</h4>
+            </div>
+          </div>
+
+          <div class="extra-img">
+            <img src="img/MJS/Exterior.webp" alt="">
+            <div class="img-txt">
+              <h4>Exterior</h4>
+            </div>
+          </div>
+
+          <div class="extra-img">
+            <img src="img/MJS/Garaje.webp" alt="">
+            <div class="img-txt">
+              <h4>Transporte en el garaje</h4>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="imagen"><img src="img/MJS.webp" alt=""></div>
     </main>
   </body>
 </html>

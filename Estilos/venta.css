@@ -41,15 +41,39 @@ header {
 
 main {display: grid; gap: 16px;}
 
-h2 {font-size: 26px; margin-top: 25px; margin-bottom: 5px; margin: 25px 90px 5px 90px;}
+.detalles {
+    margin: 20px 30px;
+    padding: 25px;
+    background: var(--color-bg-div);
+    background-position: center;
+    grid-template-columns: repeat(2, auto);
+    border-radius: 15px;
+}
 
-p{margin: auto 100px 2px 100px;}
 
-ul {margin: auto 130px 2px 130px;}
 
-a{color: var(--color-medium); text-decoration: underline;}
+.imgs {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    float: right;
+}
+.portada{
+    width: 500px;
+    float: right;
+    margin: 20px 60px 8px 100px;
+    border-radius: 5px;
+}
 
-.texto, table{
+h1, h4 {margin-bottom: 3px; margin-top: 6px;}
+
+hr{
+    border:2px solid var(--color-primary);
+    margin-bottom: 10px;
+}
+
+p{margin: 0px 3px;}
+
+a{color: var(--color-medium); text-decoration: underline;}table{
     width: 1400px;
     margin: 25px auto;
     padding: 10px;
@@ -57,21 +81,45 @@ a{color: var(--color-medium); text-decoration: underline;}
     background: var(--color-bg-div);
 }
 
-tr{text-align: center;}
+ul li{margin: 0px 30px;}
 
-table tr td img, .item, .precio, .tamaño, .daño, .trampas, .fragil, .mapa, .detalle {
-    padding: 5px;
-    font-weight: normal;
+.esq-arriba-izq{border-radius: 25px 0px 0px 0px;}
+.esq-arriba-der{border-radius: 0px 25px 0px 0px;}
+
+table {
+    background: var(--color-primary);
+    border-collapse: collapse;
+    border-radius: 35px;
+    border: none;
 }
 
-table tr td img{width: 350px; border-radius: 8px;}
+.titulos {
+    background: var(--color-medium);
+    color: var(--color-bg-div);
+}
+
+tr{text-align: center;}
+
+th {height: 60px;}
+
+td, th {
+    padding: 8px;
+    border: 2px solid var(--color-bg-div);
+}
 
 .item {width: 140px;}
 
-.precio {width: 160px;}
+.img-tabla {width: 300px;}
+table tr td img{width: 250px; border-radius: 8px;}
 
-.fragil {max-width: 50px;}
+.precio {width: 200px;}
 
-.mapa {width: 120px;}
+.tamaño {width: 100px;}
 
-.detalle {width: 300px;}
+.trampas {width: 200px;}
+
+.fragil {max-width: 40px;}
+
+.mapa {width: 115px;}
+
+.detalle {width: 300px; padding: 10px;}
