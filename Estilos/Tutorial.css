@@ -20,6 +20,7 @@
       height: 100%;
       display: grid;
       grid-template-rows: auto 1fr;
+      font-family: "Roboto", serif;
       color: var(--color-medium);
       overflow-x: hidden;
       transition: all .4s;
@@ -54,17 +55,23 @@
   
   .carta h1 {
     color: var(--color-medium);
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 1rem;
   }
   
   .carta h2 {
-    margin-top: 2rem;
+    margin-top: 30px;
+  }
+
+  .img-content{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
   }
   
   .imagen-tutorial {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 15px auto;
     display: block;
     border-radius: 10px;
@@ -79,3 +86,5 @@
   section {
     margin-bottom: 40px;
   }
+
+  p {font-size: 16px; margin-left: 15px;}
