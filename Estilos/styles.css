@@ -157,7 +157,7 @@ ul.contenedor {
   padding-bottom: 20px;
 }
 
-ul.contenedor#enemigos{
+ul.contenedor#enemigos, ul.contenedor#objetosVendibles, ul.contenedor#objetosComprables{
   max-height: 500px;
 }
 

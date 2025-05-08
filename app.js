@@ -36,8 +36,6 @@ function iniciarCarrusel(idCarrusel) {
     }
   });
 
-  window.addEventListener('resize', moverCarrusel)
-
   actualizarBotones();
 }
 
@@ -45,3 +43,16 @@ iniciarCarrusel('carrusel1');
 iniciarCarrusel('carrusel2');
 iniciarCarrusel('carrusel3');
 iniciarCarrusel('carrusel4');
+
+//carga de enlaces
+window.addEventListener("load", () => {
+  const hash = window.location.hash;
+  if (hash) {
+    const el = document.querySelector(hash);
+    if (el) {
+      const offset = 200; // Ajusta según tu diseño
+      const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  }
+});
