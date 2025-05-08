@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
   if (hash) {
     const el = document.querySelector(hash);
     if (el) {
-      const offset = 200; // Ajusta según tu diseño
+      const offset = 200;
       const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({ top, behavior: "smooth" });
     }
